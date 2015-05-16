@@ -2,14 +2,16 @@
 <html>
 <head>
 	<title>[we need to ask about page titles]</title>
-	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/typography.css">
 	<script type="text/javascript" src="js/functions.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
 <nav>
-	<a href="index.html"> <img src="images/dae-logo-big.gif" alt="DAE" title="DAE" /></a>
+	<logo><a href="index.html"> <img src="images/dae-logo-big.gif" alt="DAE" title="DAE" /></a></logo>
 	<ul>
 		<li><a href="products.html">Products</a></li>
 		<li><a href="services.html">Services</a></li>
@@ -21,24 +23,32 @@
 	<form>
 		<label>
 			<input type="text" name="search" id="nav-search" placeholder="Search Site" />
-			<img src="nav-search.gif" alt="search" title="search" />
+			<img src="images/nav-search.gif" alt="search" title="search" />
 		</label>
 	</form>
 </nav>
-<div>
-	<img src="PUT)IMG_HERE" />
+<div id="css-index-spotlight">
 	<section>
-		<img src="home-left-arrow.gif" /><img src="home-right-arrow.gif" />
-		<h1>Engine Stand X</h1>
-		<p>Ut mei purto expetenda, erat adipisci necessitatibus eam et. Impetus impedit expetenda no pr In pri aperiam similique. Sea honestatis mediocritatem ut.</p>
-		<p>Impetus impedit expetenda no pri, vitae nemore scripta vix ut. Impetus impedit expetenda no pr In pri aperiam vitae nemore scriptasimilique.</p>
+		<img src="images/enginelift.gif" />
+		<img class="left-arrow" src="images/home-left-arrow.gif" /><img class="right-arrow" src="images/home-right-arrow.gif" />
+		<article>
+			<h1>Engine Stand X</h1>
+			<div>
+				<p>Ut mei purto expetenda, erat adipisci necessitatibus eam et. Impetus impedit expetenda no pr In pri aperiam similique. Sea honestatis mediocritatem ut.</p>
+				<p>Impetus impedit expetenda no pri, vitae nemore scripta vix ut. Impetus impedit expetenda no pr In pri aperiam vitae nemore scriptasimilique.</p>
+			</div>
+		</article>
 	</section>
 </div>
-<div>
+<div id="css-index-more-info">
+	<ul id="css-index-more-info-links">
+		<li><a id="" href="featured-product.html">Featured Product</a></li>
+		<li><a href="news.html">News</a></li>
+		<li><a href="http://outsidelink.com"><img src="inter-airport.gif"></a></li>
+	</ul>
 	<section>
-		<a href="featured-product.html">Featured Product</a>
 		<article>
-			<img src="PUT_IMG_HERE" />
+			<img src="" />
 			<h1>Engine Stand X</h1>
 			<p>Ut mei purto expetenda, erat adipisci necessitatibus eam et. Impetus impedit expetenda no pr In pri aperiam similique. Sea honestatis mediocritatem ut.</p>
 			<p>Impetus impedit expetenda no pri, vitae nemore scripta vix ut. Impetus impedit expetenda no pr In pri aperiam vitae nemore scriptasimilique.</p>
@@ -46,7 +56,6 @@
 		</article>
 	</section>
 	<section>
-		<a href="news.html">News</a>
 		<article>
 			<img src="PUT_IMG_HERE" />
 			<h1>This is the News Headline</h1>
@@ -64,9 +73,6 @@
 			<li><a href="news-item.html"><span>July 2</span> Past News Headline</a></li>
 			<li><a href="news-item.html"><span>July 1</span> Past News Headline</a></li>
 		</ul>
-	</section>
-	<section>
-		<a href="http://outsidelink.com"><img src="inter-airport.gif"></a>
 	</section>
 </div>
 </body>
