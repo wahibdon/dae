@@ -1,8 +1,12 @@
-* {position: relative;}
-html {
-	background-color: #dfe1ec;
+* {
+	position: relative;
+	margin: 0;
+	padding: 0;
 }
 body {
+	background-color: #dfe1ec;
+}
+#container {
 	width: 1000px;
 	border: 1px solid #ccc;
 	border-top: none;
@@ -10,6 +14,7 @@ body {
 	margin: 0 auto;
 	margin-bottom: 10px;
 	background-color: #fff;
+	overflow-x: hidden;
 }
 nav {
 	height: 90px;
@@ -30,13 +35,14 @@ p {margin: 0;}
 nav > ul, nav > form {
 	margin: 0;
 	display: inline-block;
+	float: right;
 }
 nav > ul > li{
 	display: inline-block;
 	list-style-type: none;
 	margin-right: 24px;
 	font-size: 14px;
-	padding: 8px;
+	padding: 9px 0;
 }
 nav > ul > li:last-child{
 	margin-right: 20px;
@@ -46,6 +52,8 @@ nav > ul > li:last-child{
 nav > ul > li > a{
 	color: #000;
 	text-decoration: none;
+	display: block;
+	padding: 8px;
 }
 nav > ul > li:last-child > a{
 	color: #fff;

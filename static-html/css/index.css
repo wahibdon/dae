@@ -40,11 +40,12 @@
 #css-index-spotlight section img.right-arrow{ right: 0; }
 #css-index-more-info {
 	background-color: #e6e6e6;
+	overflow: auto;
 }
 #css-index-more-info-links{
 	text-align: center;
 	margin: 0;
-	padding: 0;
+	padding: 20px 0 0 0;
 }
 #css-index-more-info-links li{
 	list-style-type: none;
@@ -61,4 +62,60 @@
 	color: #27387e;
 	text-decoration: none;
 	line-height: 40px; 
+}
+#css-index-more-info-links li:last-child a {
+	border: 0;
+	height: auto;
+
+}
+#css-index-featured-product, #css-index-news {
+	background-color: #fff;
+	margin: 10px;
+	padding: 10px;
+	font-weight: 300;
+	font-size: 11px;
+	overflow: auto;
+}
+#css-index-featured-product img, #css-index-news img {
+	display: block;
+	float: left;
+	width: 233px;
+	height: 152px;
+	margin-right: 40px;
+}
+#css-index-featured-product h1, #css-index-news h1{
+	font-weight: 500;
+	font-size: 16px;
+	color: #27387e;
+}
+#css-index-featured-product p, #css-index-news p{
+	color: #000;
+}
+#css-index-featured-product > article > a, #css-index-news >article>a{
+	font-style: italic;
+}
+#css-index-featured-product > article > div{
+	column-count: 2;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+}
+#css-index-news > ul {
+	float:right;
+	width: 33%;
+	margin-left: 30px;
+	font-size: 14px;
+	z-index: 1;
+}
+#css-index-news > ul > li {
+	list-style-type: none;
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+}
+#css-index-news > ul > li > a {
+	text-decoration: none;
+	color: #000;
+}
+#css-index-news > ul > li > a > span {
+	font-weight: 500;
+	color: #27387e;
 }
