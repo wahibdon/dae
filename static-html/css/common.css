@@ -74,7 +74,85 @@ nav > form > label > img {
 	vertical-align: middle;
 }
 ul.subnav {
-
+	background-color: #27387F;
+	width: 100%;
+	text-align: center;
+	height: 35px;
+	padding-top: 5px;
+}
+ul.subnav li{
+	display: inline-block;
+	font-weight: 100;
+	margin-right: 5px;
+	line-height: 35px;
+	height: 35px;
+	font-size: 13px;
+	padding: 0 10px;
+	text-rendering: geometricPrecision;
+}
+ul.subnav li:after{
+	content: url("../images/menu-down-arrow.gif");
+}
+ul.subnav li:hover:after {
+	content: url("../images/menu-down-arrow-active.gif");
+}
+ul.subnav li:hover {
+	background-color: #e6e6e6;
+	font-weight: 100;
+}
+ul.subnav li:hover a {
+	color: #000;
+}
+ul.subnav li a{
+	color: #fff;
+	text-decoration: none;
+}
+div#product-search {
+	background-color: #e6e6e6;
+	height: 19px;
+	padding: 8px 0;
+	text-align: center;
+}
+div#product-search input {
+	background-image: url('../images/product-search.gif');
+	background-repeat: no-repeat;
+	background-position: center left;
+	padding-left: 19px;
+	border: none;
+	background-color: #ccc;
+}
+div#landing	{
+	padding: 55px 5px;
+}
+div#landing section {
+	display: inline-block;
+	width: 305px;
+	margin: 0 10px 20px;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+}
+div#landing img.bleed {
+	height: 190px;
+	background-image: url();
+	background-size: cover;
+}
+div#landing div.caption {
+	padding: 10px;
+}
+div#landing div.caption h2 {
+	font-size: 10px;
+	color: #ccc;
+	text-transform: uppercase;
+}
+div#landing div.caption p {
+	margin-bottom: 5px;
+	font-size: 11px;
+}
+div#landing div.caption a {
+	font-style: italic;
+	color: #000;
+	font-size: 11px;
+	font-weight: 500;
 }
 footer{
 	font-size: 11px;
