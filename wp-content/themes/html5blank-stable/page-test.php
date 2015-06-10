@@ -4,7 +4,7 @@ Template Name: Testing Page Template
 */
 get_header(); ?>
 
-	<? $tax = array ('prod-cat', 'engine-stand');
+	<?php $tax = array ('prod-cat', 'engine-stand');
 	$args = array(
     'orderby'           => 'name', 
     'order'             => 'ASC',
