@@ -27,7 +27,7 @@ get_header(); ?>
     'search'            => '', 
     'cache_domain'      => 'core'
 ); 
-echo get_terms($taxonomies, $args);?>
+echo get_terms($tax, $args);?>
 
 <p>huh?</p>
 
