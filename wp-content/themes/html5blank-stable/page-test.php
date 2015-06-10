@@ -29,6 +29,6 @@ get_header(); ?>
 ); 
 echo get_terms($taxonomies, $args);?>
 
-<p>huh?
+<p>huh?</p>
 
 <?php get_footer(); ?>
