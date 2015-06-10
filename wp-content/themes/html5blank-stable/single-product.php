@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 	<ul class="subnav">
 		<li><a href="">Engline Stands</a></li>
 		<li><a href="">Docking Systems</a></li>
