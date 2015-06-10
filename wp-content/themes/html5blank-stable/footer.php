@@ -1,4 +1,4 @@
-			<!-- footer -->
+<? /*			<!-- footer -->
 			<footer class="footer" role="contentinfo">
 
 				<!-- copyright -->
@@ -27,4 +27,8 @@
 		</script>
 
 	</body>
+</html>*/
+?>
+</div>
+</body>
 </html>

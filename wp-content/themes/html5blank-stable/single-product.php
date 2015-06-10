@@ -103,6 +103,4 @@
 			</tbody>
 		</table>
 	</section>
-</div>
-</body>
-</html>
+<?php get_footer(); ?>
