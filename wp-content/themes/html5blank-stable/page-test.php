@@ -4,7 +4,7 @@ Template Name: Testing Page Template
 */
 get_header(); ?>
 
-	<?php/*$tax = array ('prod-cat', 'engine-stand');
+	<?php $tax = array ('prod-cat', 'engine-stand');
 	$args = array(
     'orderby'           => 'name', 
     'order'             => 'ASC',
@@ -27,7 +27,7 @@ get_header(); ?>
     'search'            => '', 
     'cache_domain'      => 'core'
 ); 
-echo get_terms($taxonomies, $args);*/?>
+echo get_terms($taxonomies, $args);?>
 
 <p>huh?</p>
 
