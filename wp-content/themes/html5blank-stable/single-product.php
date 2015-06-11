@@ -20,7 +20,7 @@
 				return "<p>".str_replace("\n", "</p>\n<p>", $content)."</p>";
 			}
 			//add_filter('the_content', 'show_desc'); 
-			echo add_filter('the_content', 'show_desc');
+			add_filter('the_content', 'show_desc');
 			?>
 			<!--<a href="">Read more &raquo;</a>-->
 		</article>
