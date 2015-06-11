@@ -15,7 +15,7 @@
 	<section id="product-copy">
 		<article>
 			<h1><?php echo get_the_title(); ?></h1>
-			<p><?php echo the_content(); ?></p>
+			<?php echo the_content(); ?>
 			<!--<a href="">Read more &raquo;</a>-->
 		</article>
 		<table>
@@ -33,6 +33,10 @@
 				</tr>
 			</tbody>
 		</table>
+		<div>
+			testgin:
+			<?php echo types_render_field("product-image"); ?>
+		</div>
 	</section>
 	<section id="images-rec">
 		<ul id="product-actions">
