@@ -11,12 +11,12 @@
 		<li><a href="product-landing.html">Product Type ></a></li>
 		<li>Product Name</li>
 	</ul>
+	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 	<section id="product-copy">
 		<article>
-			<h1>Engine Stand 1</h1>
-			<p>Cras quis purus a metus varius pretium ut sed urna. Sed pretium euismod turpis. Nam pellentesque felis eu nibh maximus blandit. Integer vel nisi tellus.</p>
-			<p>Praesent nec feugiat libero. Sed elementum enim ac nulla pharetra, nec convallis ligula pretium. Integer nec pretium lectus. Donec a enim augue. In bibendum tortor ut tortor tincidunt, ut euismod nulla volutpat. Aliquam molestie a magna a imperdiet.</p>
-			<a href="">Read more &raquo;</a>
+			<h1><?php echo get_the_title(); ?></h1>
+			<p><?php echo the_content(); ?></p>
+			<!--<a href="">Read more &raquo;</a>-->
 		</article>
 		<table>
 			<thead>
@@ -103,4 +103,6 @@
 			</tbody>
 		</table>
 	</section>
+	<?php endwhile; ?>
+	<?php endif; ?>
 <?php get_footer(); ?>
