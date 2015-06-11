@@ -1,34 +1,17 @@
-<?php 
-/*
-Template Name: Testing Page Template
-*/
-get_header(); ?>
+<?php get_header(); ?>
 
-	<?php $tax = array ('prod-cat');
-	$args = array(
-    'orderby'           => 'name', 
-    'order'             => 'ASC',
-    'hide_empty'        => true, 
-    'exclude'           => array(), 
-    'exclude_tree'      => array(), 
-    'include'           => array(),
-    'number'            => '', 
-    'fields'            => 'all', 
-    'slug'              => '',
-    'parent'            => '',
-    'hierarchical'      => true, 
-    'child_of'          => 0,
-    'childless'         => false,
-    'get'               => '', 
-    'name__like'        => '',
-    'description__like' => '',
-    'pad_counts'        => false, 
-    'offset'            => '', 
-    'search'            => '', 
-    'cache_domain'      => 'core'
-); 
-print_r(get_terms($tax, $args));?>
+    <main role="main">
+        <!-- section -->
+        <section>
 
-<p>huh?</p>
+            <h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
+
+            <?php get_template_part('loop'); ?>
+
+            <?php get_template_part('pagination'); ?>
+
+        </section>
+        <!-- /section -->
+    </main>
 
 <?php get_footer(); ?>
