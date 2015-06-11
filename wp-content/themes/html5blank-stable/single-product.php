@@ -15,7 +15,7 @@
 	<section id="product-copy">
 		<article>
 			<h1><?php echo get_the_title(); ?></h1>
-			<?php echo add_filter('the_content', function(){ return $GLOBALS['post']->post_content;}); ?>
+			<?php add_filter('the_content', function(){ return $GLOBALS['post']->post_content;}); ?>
 			<!--<a href="">Read more &raquo;</a>-->
 		</article>
 		<table>
