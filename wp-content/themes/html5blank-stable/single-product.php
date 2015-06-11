@@ -15,7 +15,7 @@
 	<section id="product-copy">
 		<article>
 			<h1><?php echo get_the_title(); ?></h1>
-			<?php echo the_content(); ?>
+			<?php echo add_filter('the_content', function(){ return $GLOBALS['post']->post_content;}; ?>
 			<!--<a href="">Read more &raquo;</a>-->
 		</article>
 		<table>
@@ -33,10 +33,6 @@
 				</tr>
 			</tbody>
 		</table>
-		<div>
-			testgin:
-			<?php echo types_render_field("product-image", array('output' => 'html')); ?>
-		</div>
 	</section>
 	<section id="images-rec">
 		<ul id="product-actions">
@@ -50,18 +46,7 @@
 				<img src="images/product.png" />
 			</div>
 			<div>
-				<div>
-					<a href=""><img src="images/product.png" /></a>
-				</div>
-				<div>
-					<a href=""><img src="images/product2.png" /></a>
-				</div>
-				<div>
-					<a href=""><img src="images/product3.png" /></a>
-				</div>
-				<div>
-					<a href=""><img src="images/product4.png" /></a>
-				</div>
+				<?php echo types_render_field("product-image", array('output' => 'html')); ?>
 			</div>
 		</div>
 		<table>
