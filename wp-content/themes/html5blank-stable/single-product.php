@@ -16,7 +16,7 @@
 			<h1><?php echo get_the_title(); ?></h1>
 			<?php echo show_post_body($post->post_content);	?>
 		</article>
-		<? print_r(the_field('specs')); ?>
+		<? print_r(get_field('specs')); ?>
 		<table>
 			<thead>
 				<tr>
