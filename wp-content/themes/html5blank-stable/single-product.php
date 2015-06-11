@@ -11,19 +11,12 @@
 		<li><a href="product-landing.html">Product Type ></a></li>
 		<li>Product Name</li>
 	</ul>
-	<?php //if (have_posts()): while (have_posts()) : the_post(); ?>
 	<section id="product-copy">
 		<article>
 			<h1><?php echo get_the_title(); ?></h1>
-			<?php 
-			function show_desc($content){
-				return "<p>".str_replace("\n", "</p>\n<p>", $content)."</p>";
-			}
-			//add_filter('the_content', 'show_desc'); 
-			echo show_desc($post->post_content);
-			?>
-			<!--<a href="">Read more &raquo;</a>-->
+			<?php echo show_post_body($post->post_content);	?>
 		</article>
+		<? the_field('specs'); ?>
 		<table>
 			<thead>
 				<tr>
@@ -98,6 +91,4 @@
 			</tbody>
 		</table>
 	</section>
-	<?php //endwhile; ?>
-	<?php //endif; ?>
 <?php get_footer(); ?>
