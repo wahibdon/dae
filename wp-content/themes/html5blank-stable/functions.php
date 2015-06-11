@@ -495,4 +495,9 @@ function build_rec_table($table_array){
     $table .="</tbody></table>";
     return $table;
 }
+add_filter('wp_nav_menu_items','show_register_login_link');
+function show_register_login_link($nav) {
+    // The "Register" link is not offered if the Administration > Settings > General > Membership: Anyone can register box is not checked.
+    return $nav."<li class='menu-item'>".wp_loginout(get_site_url(), false)."</li>";
+}
 ?>
