@@ -19,7 +19,7 @@
 			function show_desc($content){
 				return $content;
 			}
-			add_filter('the_content', 'show_desc'); 
+			//add_filter('the_content', 'show_desc'); 
 			echo show_desc($post->post_content);
 			?>
 			<!--<a href="">Read more &raquo;</a>-->
