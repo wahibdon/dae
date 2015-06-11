@@ -17,11 +17,10 @@
 			<h1><?php echo get_the_title(); ?></h1>
 			<?php 
 			function show_desc($content){
-				return $content;
+				return "<p>".str_replace("\n", "</p>\n<p>", $content)."</p>";
 			}
 			//add_filter('the_content', 'show_desc'); 
-			echo show_desc($GLOBALS['post']->post_content);
-			echo $GLOBALS['post']->post_content;
+			echo add_filter('the_content', 'show_desc');
 			?>
 			<!--<a href="">Read more &raquo;</a>-->
 		</article>
