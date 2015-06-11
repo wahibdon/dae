@@ -453,4 +453,14 @@ function show_post_body($content){
     $content = "<p>".str_replace("\n", "</p>\n<p>", $content)."</p>";
     return str_replace("<p></p>\n", "", $content);
 }
+function build_spec_table($table_array){
+    $table = "<table>
+            <thead>
+                <tr>
+                    <th>{$table_array['header'][0][c]}</th><th>Value</th><th>Units</th>
+                </tr>
+            </thead>";
+    $table .= "</table>";
+    return $table;
+}
 ?>
