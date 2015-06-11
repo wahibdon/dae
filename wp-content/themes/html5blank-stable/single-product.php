@@ -35,7 +35,7 @@
 		</table>
 		<div>
 			testgin:
-			<?php $var =  types_render_field("product-image", array('output' => 'html')); print_f("somethign should happen %s", $var); ?>
+			<?php $var =  types_render_field("product-image", array('output' => 'html')); ?>
 		</div>
 	</section>
 	<section id="images-rec">
