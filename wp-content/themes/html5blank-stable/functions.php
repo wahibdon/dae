@@ -457,10 +457,14 @@ function build_spec_table($table_array){
     $table = "<table>
             <thead>
                 <tr>
-                    <th>{$table_array['header'][0][c]}</th><th>Value</th><th>Units</th>
+                    <th>{$table_array['header'][0][c]}</th><th>{$table_array['header'][1][c]}</th><th>{$table_array['header'][2][c]}</th>
                 </tr>
             </thead>";
-    $table .= "</table>";
+    $table .= "<tbody>";
+    for($i = 0; $i < count($table_array['body']); $i++){
+        table.="<tr><td>{$table_array['body'][$i][0][c]}</td><td>{$table_array['body'][$i][1][c]}</td><td>{$table_array['body'][$i][2][c]}</td></tr>";
+    }
+    $table .="</tbody></table>";
     return $table;
 }
 ?>
