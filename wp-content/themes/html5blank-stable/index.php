@@ -2,8 +2,8 @@
 
 	<div id="css-index-spotlight">
 		<section>
-			<img src="images/enginelift.gif" />
-			<img class="left-arrow" src="images/home-left-arrow.gif" /><img class="right-arrow" src="images/home-right-arrow.gif" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/enginelift.gif" />
+			<img class="left-arrow" src="<?php echo get_template_directory_uri(); ?>/images/home-left-arrow.gif" /><img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/images/home-right-arrow.gif" />
 			<article>
 				<h1>Engine Stand X</h1>
 				<div>
@@ -17,11 +17,11 @@
 		<ul id="css-index-more-info-links">
 			<li><a id="" href="featured-product.html">Featured Product</a></li>
 			<li><a href="news.html">News</a></li>
-			<li><a href="http://outsidelink.com"><img src="images/inter-airport.gif"></a></li>
+			<li><a href="http://outsidelink.com"><img src="<?php echo get_template_directory_uri(); ?>/images/inter-airport.gif"></a></li>
 		</ul>
 		<section id="css-index-featured-product">
 			<article>
-				<img src="images/enginelift.gif" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/enginelift.gif" />
 				<h1>Engine Stand X</h1>
 				<div>
 					<p>Ut mei purto expetenda, erat adipisci necessitatibus eam et. Impetus impedit expetenda no pr In pri aperiam similique. Sea honestatis mediocritatem ut.</p>
@@ -42,7 +42,7 @@
 				<li><a href="news-item.html"><span>July 1</span> Past News Headline</a></li>
 			</ul>
 			<article>
-				<img src="images/news-placeholder.jpg" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/news-placeholder.jpg" />
 				<h1>This is the News Headline</h1>
 				<div>
 					<p>Byline <time pubdate datetime="2015-05-14">09 May 2015</time></p>
