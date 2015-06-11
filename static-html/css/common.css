@@ -372,3 +372,126 @@ footer span{
 	font-size: 7px;
 	font-weight: 400;
 }
+
+/*---Stuff on the index page---*/
+#css-index-spotlight {
+	height: 643px;
+	background-color: #27387e;
+	background-image: url('../images/index-lone-plane-bg.jpg');
+	background-repeat: no-repeat;
+	box-shadow: 0 10px 10px 0px #bbb;
+	z-index: 99;
+}
+#css-index-spotlight section{
+	position: absolute;
+	bottom: 25px;
+	right: 25px;
+	width: 600px;
+	padding: 0 25px;
+	text-align: right;
+}
+#css-index-spotlight section h1{
+	font-size: 16px;
+	color: #A9AFCC;
+	font-weight: 400;
+}
+#css-index-spotlight section p{
+	font-size: 11px;
+	color: #fff;
+}
+#css-index-spotlight section article {
+	text-align: left; 
+}
+#css-index-spotlight section article div{ 
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+#css-index-spotlight section img.left-arrow, #css-index-spotlight section img.right-arrow{ 
+	display: block;
+	position: absolute;
+	bottom: 20px;
+}
+#css-index-spotlight section img.left-arrow{ left: 0; }
+#css-index-spotlight section img.right-arrow{ right: 0; }
+#css-index-more-info {
+	background-color: #e6e6e6;
+	overflow: auto;
+}
+#css-index-more-info-links{
+	text-align: center;
+	margin: 0;
+	padding: 20px 0 0 0;
+}
+#css-index-more-info-links li{
+	list-style-type: none;
+	display: inline-block;
+	width: 33%;
+	vertical-align: middle;
+	font-size: 22px;
+}
+#css-index-more-info-links li a {
+	display: inline-block;
+	border: 3px solid #27387e;
+	width: 190px;
+	height: 40px;
+	color: #27387e;
+	text-decoration: none;
+	line-height: 40px; 
+}
+#css-index-more-info-links li:last-child a {
+	border: 0;
+	height: auto;
+
+}
+#css-index-featured-product, #css-index-news {
+	background-color: #fff;
+	margin: 10px;
+	padding: 10px;
+	font-weight: 300;
+	font-size: 11px;
+	overflow: auto;
+}
+#css-index-featured-product img, #css-index-news img {
+	display: block;
+	float: left;
+	width: 233px;
+	height: 152px;
+	margin-right: 40px;
+}
+#css-index-featured-product h1, #css-index-news h1{
+	font-weight: 500;
+	font-size: 16px;
+	color: #27387e;
+}
+#css-index-featured-product p, #css-index-news p{
+	color: #000;
+}
+#css-index-featured-product > article > a, #css-index-news >article>a{
+	font-style: italic;
+}
+#css-index-featured-product > article > div{
+	column-count: 2;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+}
+#css-index-news > ul {
+	float:right;
+	width: 33%;
+	margin-left: 30px;
+	font-size: 14px;
+	z-index: 1;
+}
+#css-index-news > ul > li {
+	list-style-type: none;
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+}
+#css-index-news > ul > li > a {
+	text-decoration: none;
+	color: #000;
+}
+#css-index-news > ul > li > a > span {
+	font-weight: 500;
+	color: #27387e;
+}
