@@ -11,11 +11,11 @@
 		<li><a href="product-landing.html">Product Type ></a></li>
 		<li>Product Name</li>
 	</ul>
-	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+	<?php //if (have_posts()): while (have_posts()) : the_post(); ?>
 	<section id="product-copy">
 		<article>
 			<h1><?php echo get_the_title(); ?></h1>
-			<?php echo $post->post_content; ?>
+			<?php echo the_content(); ?>
 			<!--<a href="">Read more &raquo;</a>-->
 		</article>
 		<table>
@@ -35,7 +35,7 @@
 		</table>
 		<div>
 			testgin:
-			<?php $var =  types_render_field("product-image", array('output' => 'raw')); var_dump($var);?>
+			<?php echo types_render_field("product-image", array('output' => 'html')); ?>
 		</div>
 	</section>
 	<section id="images-rec">
@@ -107,6 +107,6 @@
 			</tbody>
 		</table>
 	</section>
-	<?php endwhile; ?>
-	<?php endif; ?>
+	<?php //endwhile; ?>
+	<?php //endif; ?>
 <?php get_footer(); ?>
