@@ -22,8 +22,8 @@
 		<ul id="product-actions">
 			<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/share.gif" /></a></li>
 			<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/print.gif" /></a></li>
-			<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/manual.gif" /></a></li>
-			<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/spec.gif" /></a></li>
+			<li><a href="<?php echo types_render_field('manual') ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/manual.gif" /></a></li>
+			<li><a href="<?php echo types_render_field('spec-sheet') ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/spec.gif" /></a></li>
 		</ul>
 		<div id="slideshow">
 			<div>
