@@ -17,21 +17,6 @@
 			<?php echo show_post_body($post->post_content);	?>
 		</article>
 		<? echo build_spec_table(get_field('specs')); ?>
-		<table>
-			<thead>
-				<tr>
-					<th>Attribute</th><th>Value</th><th>Units</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Model</td><td>3224-lr</td><td></td>
-				</tr>
-				<tr>
-					<td>Weight</td><td>2400</td><td>lbs</td>
-				</tr>
-			</tbody>
-		</table>
 	</section>
 	<section id="images-rec">
 		<ul id="product-actions">
@@ -48,47 +33,7 @@
 				<?php echo types_render_field("product-image", array('output' => 'html')); ?>
 			</div>
 		</div>
-		<table>
-			<thead>
-				<tr>
-					<th>Recommended Accesories</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Accesory 1</td>
-				</tr>
-				<tr>
-					<td>Accesory 2</td>
-				</tr>
-				<tr>
-					<td>Accesory 3</td>
-				</tr>
-				<tr>
-					<td>Accesory 4</td>
-				</tr>
-			</tbody>
-		</table>
-		<table>
-			<thead>
-				<tr>
-					<th colspan="2">Options</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Option 1</td><td>Detail</td>
-				</tr>
-				<tr>
-					<td>Option 2</td><td>Detail</td>
-				</tr>
-				<tr>
-					<td>Option 3</td><td>Detail</td>
-				</tr>
-				<tr>
-					<td>Option 4</td><td>Detail</td>
-				</tr>
-			</tbody>
-		</table>
+		<? echo build_spec_table(get_field('recommendations')); ?>
+		<? echo build_spec_table(get_field('options')); ?>
 	</section>
 <?php get_footer(); ?>

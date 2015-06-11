@@ -467,4 +467,32 @@ function build_spec_table($table_array){
     $table .="</tbody></table>";
     return $table;
 }
+function build_options_table($table_array){
+    $table = "<table>
+            <thead>
+                <tr>
+                    <th colspan=\"2\">{$table_array['header'][0][c]}</th></th>
+                </tr>
+            </thead>";
+    $table .= "<tbody>";
+    for($i = 0; $i < count($table_array['body']); $i++){
+        $table.="<tr><td>{$table_array['body'][$i][0][c]}</td><td>{$table_array['body'][$i][1][c]}</td></tr>";
+    }
+    $table .="</tbody></table>";
+    return $table;
+}
+function build_rec_table($table_array){
+    $table = "<table>
+            <thead>
+                <tr>
+                    <th>{$table_array['header'][0][c]}</th></th>
+                </tr>
+            </thead>";
+    $table .= "<tbody>";
+    for($i = 0; $i < count($table_array['body']); $i++){
+        $table.="<tr><td>{$table_array['body'][$i][0][c]}</td></tr>";
+    }
+    $table .="</tbody></table>";
+    return $table;
+}
 ?>
