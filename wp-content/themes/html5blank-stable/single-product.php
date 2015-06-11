@@ -20,7 +20,8 @@
 				return $content;
 			}
 			//add_filter('the_content', 'show_desc'); 
-			echo show_desc($post->post_content);
+			echo show_desc($GLOBALS['post']->post_content);
+			echo $GLOBALS['post']->post_content;
 			?>
 			<!--<a href="">Read more &raquo;</a>-->
 		</article>
