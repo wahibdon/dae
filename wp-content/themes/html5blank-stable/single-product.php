@@ -35,7 +35,7 @@
 		</table>
 		<div>
 			testgin:
-			<?php $var =  types_render_field("product-image"); print_r($var);?>
+			<?php $var =  types_render_field("product-image"); var_dump($var);?>
 		</div>
 	</section>
 	<section id="images-rec">
