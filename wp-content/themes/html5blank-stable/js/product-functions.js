@@ -6,5 +6,6 @@ for (var i= 0; i <images.length; i++){
 			holders[i].style.backgroundImage = "none";
 		}
 		this.parentNode.parentNode.style.backgroundImage = "url('http://dae.ott-toolbox.com/wp-content/themes/html5blank-stable/images/product-img-indicator.gif')";
+		document.getElementById("largeImage").src = this.src;
 	});
 }
