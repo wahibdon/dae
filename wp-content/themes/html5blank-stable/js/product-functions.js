@@ -6,7 +6,15 @@ for (var i= 0; i <images.length; i++){
 			holders[i].style.backgroundImage = "none";
 		}
 		this.parentNode.parentNode.style.backgroundImage = "url('http://dae.ott-toolbox.com/wp-content/themes/html5blank-stable/images/product-img-indicator.gif')";
-		document.getElementById("largeImage").src = this.src;
+		setLargeImage(this);
 	});
 }
-document.getElementById("largeImage").src = images[0].src;
+function setLargeImage(img){
+	document.getElementById("largeImage").src = img.src;
+	if(img.clientWidth < img.clientHeight){
+		img.style.height = "340px";
+	}else{
+		img.style.width = "540px";
+	}
+}
+setLargeImage(images[0]);
