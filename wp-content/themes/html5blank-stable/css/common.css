@@ -494,10 +494,10 @@ footer span{
 	font-weight: 500;
 	color: #27387e;
 }
-div.wpcf-field-product-image-value img {
+div.wpcf-field-product-image img {
 	background-repeat: no-repeat;
 	background-position: top center;
 }
-div.wpcf-field-product-image-value:first-child img{
+div.wpcf-field-product-image:first-child img{
 	background-image: url('http://dae.ott-toolbox.com/wp-content/themes/html5blank-stable/images/product-img-indicator.gif');
 }
