@@ -9,3 +9,4 @@ for (var i= 0; i <images.length; i++){
 		document.getElementById("largeImage").src = this.src;
 	});
 }
+document.getElementById("largeImage").src = images[0].src;
