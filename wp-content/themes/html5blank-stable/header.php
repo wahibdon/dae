@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/common.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/typography.css">
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/functions.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/index.js"></script>
 </head>
 <body <?php body_class(); ?>>

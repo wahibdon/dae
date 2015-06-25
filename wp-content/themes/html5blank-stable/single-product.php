@@ -36,4 +36,5 @@
 		<? echo build_spec_table(get_field('recommendations')); ?>
 		<? echo build_spec_table(get_field('options')); ?>
 	</section>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/product-functions.js"></script>
 <?php get_footer(); ?>
