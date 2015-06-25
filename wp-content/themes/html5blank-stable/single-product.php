@@ -27,7 +27,7 @@
 		</ul>
 		<div id="slideshow">
 			<div>
-				<img src="images/product.png" />
+				<img id="largeImage" />
 			</div>
 			<div>
 				<?php echo types_render_field("product-image", array('output' => 'html')); ?>
