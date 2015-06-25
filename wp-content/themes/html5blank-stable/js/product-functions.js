@@ -10,11 +10,12 @@ for (var i= 0; i <images.length; i++){
 	});
 }
 function setLargeImage(img){
-	document.getElementById("largeImage").src = img.src;
+	var largeImage = document.getElementById("largeImage");
+	largeImage.src = img.src;
 	if(img.clientWidth < img.clientHeight){
-		img.style.height = "340px";
+		largeImage.style.height = "340px";
 	}else{
-		img.style.width = "540px";
+		largeImage.style.width = "540px";
 	}
 }
 setLargeImage(images[0]);
