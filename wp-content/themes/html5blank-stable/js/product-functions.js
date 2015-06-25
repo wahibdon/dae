@@ -14,8 +14,10 @@ function setLargeImage(img){
 	largeImage.src = img.src;
 	if(img.clientWidth < img.clientHeight){
 		largeImage.style.height = "340px";
+		largeImage.style.width = "auto";
 	}else{
 		largeImage.style.width = "540px";
+		largeImage.style.height = "auto";
 	}
 }
 setLargeImage(images[0]);
