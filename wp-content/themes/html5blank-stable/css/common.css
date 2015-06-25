@@ -501,3 +501,6 @@ div.wpcf-field-product-image {
 div.wpcf-field-product-image:first-child{
 	background-image: url('http://dae.ott-toolbox.com/wp-content/themes/html5blank-stable/images/product-img-indicator.gif');
 }
+div.wpcf-field-product-image img {
+	cursor: pointer;
+}
