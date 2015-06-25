@@ -12,7 +12,7 @@ for (var i= 0; i <images.length; i++){
 function setLargeImage(img){
 	var largeImage = document.getElementById("largeImage");
 	largeImage.src = img.src;
-	if(img.clientWidth > img.clientHeight){
+	if(largeImage.clientWidth < largeImage.clientHeight){
 		largeImage.style.height = "340px";
 		largeImage.style.width = "auto";
 	}else{
