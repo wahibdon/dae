@@ -1,19 +1,11 @@
-<?php get_header(); ?>
-
-	<main role="main">
-		<!-- section -->
-		<section>
-
-			<h1><?php _e( 'Categories for ', 'html5blank' ); single_cat_title(); ?></h1>
-
-			<?php get_template_part('loop'); ?>
-
-			<?php get_template_part('pagination'); ?>
-
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
+<?php 
+$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+get_header(); ?>
+	<h2><?php echo $term->name; ?> elsewhere on the site</h2>
+    <ul class="artistappearances">
+    <?php while (have_posts()) : the_post(); ?>       
+                <li><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a> -  <?php the_time('d M Y'); ?></li>
+    <?php endwhile; ?>
+    </ul>
 
 <?php get_footer(); ?>
