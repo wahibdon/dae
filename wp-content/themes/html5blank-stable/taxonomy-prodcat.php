@@ -9,7 +9,7 @@ get_header(); ?>
                 <li>
                 	<a class="single-product" href="<?php the_permalink() ?>" rel="bookmark">
                 		<img src="<?=$image?>" />
-                		<?php the_title(); echo substr($post->content, 0, 100)."...";?>
+                		<?php the_title(); echo substr($post->post_content, 0, 100)."...";?>
                 	</a>
                 </li>
     <?php endwhile; ?>
