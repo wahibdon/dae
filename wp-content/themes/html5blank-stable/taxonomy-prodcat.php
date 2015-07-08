@@ -6,7 +6,7 @@ get_header(); ?>
     <?php while (have_posts()) : the_post(); ?>       
                 <li>
                 	<a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a> -  <?php the_time('d M Y'); ?>
-                	<div><?php print_r($post)?></div>
+                	<div><?php echo types_render_field("product-image", array('output' => 'html'));?></div>
                 </li>
     <?php endwhile; ?>
     </ul>
