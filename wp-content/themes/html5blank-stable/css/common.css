@@ -525,7 +525,7 @@ ul#product-list li.single-product a > div > div {
 	vertical-align: middle;
 	margin-left: -5px;
 }
-ul#product-list li.single-product a > div > div > img {
+ul#product-list li.single-product a > div > img {
 	max-height: 200px;
 	max-width: 100%;
 	vertical-align: middle;
