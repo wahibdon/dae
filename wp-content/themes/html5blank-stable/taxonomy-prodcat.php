@@ -8,7 +8,9 @@ get_header(); ?>
     			?>
                 <li class="single-product">
                 	<a href="<?php the_permalink() ?>" rel="bookmark">
-                		<img src="<?=$image?>" />
+                		<div>
+	                		<img src="<?=$image?>" />
+	                	</div>
                 		<?php the_title(); echo substr($post->post_content, 0, 100)."...";?>
                 	</a>
                 </li>
