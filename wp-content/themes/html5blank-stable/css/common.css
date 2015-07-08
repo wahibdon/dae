@@ -504,3 +504,14 @@ div.wpcf-field-product-image:first-child{
 div.wpcf-field-product-image img {
 	cursor: pointer;
 }
+ul#products li.single-product {
+  display: inline-block;
+  width: 30%;
+  overflow: hidden;
+  height: 250px;
+  padding-left: 3%;
+}
+ul#products li.single-product img{
+	height: 200;
+	width: auto;
+}
