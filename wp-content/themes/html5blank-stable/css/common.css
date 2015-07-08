@@ -511,7 +511,8 @@ ul#product-list li.single-product {
   height: 250px;
   padding-left: 3%;
 }
-ul#product-list li.single-product img{
+ul#product-list li.single-product a{
+	text-decoration: none;
 }
 ul#product-list li.single-product a > div {
 	width: 100%;
