@@ -518,8 +518,16 @@ ul#product-list li.single-product a > div {
 	height: 200px;
 	text-align: center;
 }
-ul#product-list li.single-product a > div > img {
+ul#product-list li.single-product a > div > div {
+	display: inline-block;
+	height: 100%;
+	width: 0px;
+	vertical-align: middle;
+	margin-left: -5px;
+}
+ul#product-list li.single-product a > div > div > img {
 	max-height: 200px;
 	max-width: 100%;
 	vertical-align: middle;
+	display: inline-block;
 }
