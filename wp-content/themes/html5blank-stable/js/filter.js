@@ -11,7 +11,8 @@ document.getElementById('search-box').addEventListener('keyup', function(){
 		return;
 	}
 	for(var i = 0; i<products.length; i++){
-		productsUl.removeChild(products[i]);
+		if(products[i].parentNode)
+			products.parentNode.removeChild(products[i]);
 	}
 
 });
