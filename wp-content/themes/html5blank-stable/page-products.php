@@ -3,14 +3,9 @@
 	<? $terms = get_terms( 'prodcat');
 	foreach ($terms as $term){
 		print_r($term);
-		print_r(get_field("products_image", "prodcat_7"));
+		echo "<img src=\"".get_field("products_image", $term->taxonomy."_".$term->term_id))."\">";
 	}
 	?>
 
 
 <?php get_footer(); ?>
-
-$terms = get_terms ( $taxonomy, $t_args); 
-foreeach ($terms as $aterm) { 
-	 $img = get_field('img',$aterm)
-	  }
