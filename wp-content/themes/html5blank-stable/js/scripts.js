@@ -1,11 +1,3 @@
-(function ($, root, undefined) {
-	
-	$(function () {
-		
-		'use strict';
-		
-		// DOM ready, take it away
-		
-	});
-	
-})(jQuery, this);
+document.body.onload = function(){
+	console.log('document loaded');
+}

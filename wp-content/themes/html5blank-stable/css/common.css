@@ -75,6 +75,7 @@ nav > ul > li:last-child > a{
 }
 nav > form > label > input {
 	opacity: 0;
+	visibility: hidden;
 	position: absolute;
 	right: 60px;
 	top: 0px;
