@@ -7,7 +7,7 @@ echo '  <ul class="subnav">';
 foreach ($terms as $tax_term) {
     echo "      <li><a";
     if ($term == $tax_term->slug)
-        echo " class=\"active\""
+        echo " class=\"active\"";
     echo " href=\"/index.php/prodcat/".$tax_term->slug."\">".$tax_term->name."</a></li>";
 }
 echo "  </ul>";
