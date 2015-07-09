@@ -11,6 +11,9 @@ foreach ($terms as $tax_term) {
 }
 echo "  </ul>";
 ?>
+    <div id="product-search">
+        <input type="text" placeholder="Search Products" />
+    </div>
 
     <ul id="product-list">
     <?php while (have_posts()) : the_post(); ?> 
