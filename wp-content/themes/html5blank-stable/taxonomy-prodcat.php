@@ -1,10 +1,11 @@
 <?php 
 $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
-print_r ( $term );
+echo $term->slug;
 get_header(); 
 $terms = get_terms( 'prodcat');
 echo '  <ul class="subnav">';
 foreach ($terms as $tax_term) {
+    echo $tax_term->slug
     echo "      <li><a";
     if ($term->slug == $tax_term->slug)
         echo " class=\"active\"";
