@@ -32,6 +32,12 @@ logo {
 	transform: translateY(-50%);
 }
 p {margin: 0;}
+nav > ul {
+	opacity: 1;
+}
+nav > ul, nav > form > label > input {
+	transition: .2s all;
+}
 nav > ul, nav > form {
 	margin: 0;
 	display: inline-block;
@@ -68,7 +74,10 @@ nav > ul > li:last-child > a{
 	font
 }
 nav > form > label > input {
-	display: none;
+	opacity: 0;
+	position: absolute;
+	right: 60px;
+	top: 0px;
 }
 nav > form > label > img {
 	vertical-align: middle;
