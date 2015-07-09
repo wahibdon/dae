@@ -1,7 +1,12 @@
 <?php 
 $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
 get_header(); 
-print_r ( get_terms( 'prodcat') );
+$temrs = get_terms( 'prodcat');
+echo '  <ul class="subnav">';
+foreach ($terms as $term) {
+    echo "<li><a href=\"index.php/prodcat/{$term->slug}\">{$term->name}</a></li>"
+}
+echo "  ul";
 ?>
 
     <ul id="product-list">
