@@ -15,7 +15,7 @@ echo "  </ul>";
     <ul id="product-list">
     <?php while (have_posts()) : the_post(); ?> 
     			<? $image = types_render_field("product-image", array('output' => 'raw', 'index' => '0'));
-    			print_r($post);
+    			print_r(wp_get_post_tags($post->ID));
                 ?>
                 <li class="single-product">
                 	<a href="<?php the_permalink() ?>" rel="bookmark">
