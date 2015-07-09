@@ -1,7 +1,7 @@
 <?php 
 $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
 get_header(); 
-print_r ( get_taxonomies( array('name' => 'prodcat')) );
+print_r ( get_terms( 'prodcat') );
 ?>
 
     <ul id="product-list">
