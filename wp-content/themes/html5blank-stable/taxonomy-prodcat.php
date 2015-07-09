@@ -21,7 +21,7 @@ echo "  </ul>";
                     $tags_array[] = $tag->name;
                 }
                 ?>
-                <li class="single-product" data-tags="<?=json_encode($tags_array); ?>">
+                <li class="single-product" data-tags='<?=json_encode($tags_array); ?>'>
                 	<a href="<?php the_permalink() ?>" rel="bookmark">
                 		<div>
                 			<div></div>
@@ -34,5 +34,5 @@ echo "  </ul>";
                 </li>
     <?php endwhile; ?>
     </ul>
-
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/filter.js"></script>
 <?php get_footer(); ?>
