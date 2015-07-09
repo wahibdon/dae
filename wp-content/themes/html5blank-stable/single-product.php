@@ -1,11 +1,12 @@
-<?php get_header(); ?>
-	<ul class="subnav">
-		<li><a href="">Engline Stands</a></li>
-		<li><a href="">Docking Systems</a></li>
-		<li><a href="">Access Stands</a></li>
-		<li><a href="">Tooling</a></li>
-		<li><a href="">Other Products</a></li>
-	</ul>
+<?php get_header(); 
+$terms = get_terms( 'prodcat');
+	echo '  <ul class="subnav">';
+	foreach ($terms as $tax_term) {
+	    echo "      <li><a href=\"/index.php/prodcat/".$tax_term->slug."\">".$tax_term->name."</a></li>";
+	}
+	echo "  </ul>";
+	print_r($post);
+?>	
 	<ul id="bread-crumbs">
 		<li><a href="internal-landing.html">All Products ></a></li>
 		<li><a href="product-landing.html">Product Type ></a></li>
