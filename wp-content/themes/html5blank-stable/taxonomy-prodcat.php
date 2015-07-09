@@ -12,7 +12,9 @@ get_header(); ?>
                 			<div></div>
 	                		<img src="<?=$image?>" />
 	                	</div>
-                		<?php the_title(); echo substr($post->post_content, 0, 100)."...";?>
+                        <h2><?php the_title(); ?></h2>
+                		<p> <? echo substr($post->post_content, 0, 100)."...";?></p>
+                        <p>Learn more &raquo;</p>
                 	</a>
                 </li>
     <?php endwhile; ?>

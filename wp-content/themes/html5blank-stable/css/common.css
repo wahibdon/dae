@@ -505,11 +505,13 @@ div.wpcf-field-product-image img {
 	cursor: pointer;
 }
 ul#product-list li.single-product {
-  display: inline-block;
-  width: 30%;
-  overflow: hidden;
-  height: 250px;
-  padding-left: 3%;
+	display: inline-block;
+	width: 305px;
+	overflow: hidden;
+	height: 275px;
+	padding-left: 3%;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 10px 5px #bbb;
 }
 ul#product-list li.single-product a{
 	text-decoration: none;
@@ -531,4 +533,20 @@ ul#product-list li.single-product a > div > img {
 	max-width: 100%;
 	vertical-align: middle;
 	display: inline-block;
+}
+ul#product-list li.single-product a h2{
+	text-transform: uppercase;
+	color: #ccc;
+	font-size: 10px;
+	font-weight: 500;
+}
+ul#product-list li.single-product a p{
+	font-size: 11px;
+	font-weight: 100;
+	color: #000;
+}
+ul#product-list li.single-product a p:last-child{
+	color: #27387F;
+	font-style: italic;
+	font-weight: 500;
 }
