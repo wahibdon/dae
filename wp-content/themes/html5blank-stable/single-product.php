@@ -12,7 +12,7 @@ $terms = get_terms( 'prodcat');
 ?>	
 	<ul id="bread-crumbs">
 		<li><a href="/index.php/products/">All Products ></a></li>
-		<li><a href="/index.php/products/<?=$term_slug[0]->slug; ?>"><?=$term_slug[0]->name; ?> ></a></li>
+		<li><a href="/index.php/prodcat/<?=$term_slug[0]->slug; ?>"><?=$term_slug[0]->name; ?> ></a></li>
 		<li><?= get_the_title(); ?></li>
 	</ul>
 	<section id="product-copy">
