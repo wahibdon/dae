@@ -509,7 +509,7 @@ ul#product-list li.single-product, ul#internal-landing li.internal-landing {
 	width: 305px;
 	overflow: hidden;
 	height: 275px;
-	margin-left: 3%;
+	margin-left: 20px;
 	border: 1px solid #ccc;
 	box-shadow: 0 3px 3px 0px #bbb;
 	margin-top: 10px;
