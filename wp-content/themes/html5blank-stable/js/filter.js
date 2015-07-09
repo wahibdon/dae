@@ -4,7 +4,7 @@ for(var i = 0; i<products.length; i++){
 	products[i].tags = JSON.parse(products[i].dataset.tags);
 }
 document.getElementById('search-box').addEventListener('keyup', function(){
-	if(this.value = ""){
+	if(this.value == ""){
 		for(var i = 0; i<products.length; i++){
 			productsUl.appendChild(products[i]);
 		}
