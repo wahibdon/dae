@@ -3,7 +3,7 @@
 	<? $terms = get_terms( 'prodcat');
 	foreach ($terms as $term){
 		print_r($term);
-		echo get_field("products_image", $term->taxonomy."_".$term->term_id));
+		echo "<img src=\"".get_field("products_image", $term->taxonomy."_".$term->term_id)."\">";
 	}
 	?>
 
