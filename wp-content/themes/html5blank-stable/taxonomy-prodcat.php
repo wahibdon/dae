@@ -12,7 +12,7 @@ foreach ($terms as $tax_term) {
 echo "  </ul>";
 ?>
     <div id="product-search">
-        <input type="text" placeholder="Search Products" />
+        <input id="search-box" type="text" placeholder="Search Products" />
     </div>
 
     <ul id="product-list">
