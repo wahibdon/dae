@@ -11,9 +11,9 @@ $terms = get_terms( 'prodcat');
 	echo "  </ul>";
 ?>	
 	<ul id="bread-crumbs">
-		<li><a href="internal-landing.html">All Products ></a></li>
-		<li><a href="product-landing.html">Product Type ></a></li>
-		<li>Product Name</li>
+		<li><a href="/index.php/products/">All Products ></a></li>
+		<li><a href="/index.php/products/<?=$term_slug[0]->slug; ?>"><?=$term_slug[0]->name; ?> ></a></li>
+		<li><?= get_the_title(); ?></li>
 	</ul>
 	<section id="product-copy">
 		<article>
