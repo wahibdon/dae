@@ -4,15 +4,15 @@ window.onload = function(){
 		var nav = document.getElementById("main-nav");
 		if (input.show){
 			input.style.visibility = "hidden";
-			input.style.opacity = "1";
+			input.style.opacity = "0";
 			nav.style.visibility = "visible";
-			nav.style.opacity = 0;
+			nav.style.opacity = "1";
 			input.show = 0;
 		}else{
 			input.style.visibility = "visible";
-			input.style.opacity = "0";
+			input.style.opacity = "1";
 			nav.style.visibility = "hidden";
-			nav.style.opacity = "1";
+			nav.style.opacity = "0";
 			input.show = 1;
 		}
 	});
