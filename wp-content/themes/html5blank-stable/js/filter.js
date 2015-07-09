@@ -12,7 +12,7 @@ document.getElementById('search-box').addEventListener('keyup', function(){
 	}
 	for(var i = 0; i<products.length; i++){
 		if(products[i].parentNode)
-			products.parentNode.removeChild(products[i]);
+			products[i].parentNode.removeChild(products[i]);
 	}
 
 });
