@@ -100,7 +100,7 @@ ul.subnav li:hover, ul.subnav li.active {
 	background-color: #e6e6e6;
 	font-weight: 100;
 }
-ul.subnav li:hover a {
+ul.subnav li:hover a, ul.subnav li.active a {
 	color: #000;
 }
 ul.subnav li a{
