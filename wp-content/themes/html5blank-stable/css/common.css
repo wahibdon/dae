@@ -44,10 +44,10 @@ nav > ul > li{
 	font-size: 14px;
 	padding: 9px 0;
 }
-nav > ul > li:hover {
+nav > ul > li:hover, nav > ul > li.current-menu-item {
 	background-color: #27387e;
 }
-nav > ul > li:hover a {
+nav > ul > li:hover a, nav > ul > li.current-menu-item a {
 	color: #fff;
 }
 nav > ul > li:last-child{
