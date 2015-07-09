@@ -3,7 +3,7 @@
 	<? $terms = get_terms( 'prodcat');
 	foreach ($terms as $term){
 		print_r($term);
-		print_r(get_field("products-image", $term));
+		print_r(get_field("products_image", $term->slug."_".$term->term_id));
 	}
 	?>
 
