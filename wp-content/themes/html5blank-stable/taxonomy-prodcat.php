@@ -4,9 +4,9 @@ get_header();
 $temrs = get_terms( 'prodcat');
 echo '  <ul class="subnav">';
 foreach ($terms as $term) {
-    echo "<li><a href=\"index.php/prodcat/{$term->slug}\">{$term->name}</a></li>";
+    echo "      <li><a href=\"index.php/prodcat/{$term->slug}\">{$term->name}</a></li>";
 }
-echo "  ul";
+echo "  </ul>";
 ?>
 
     <ul id="product-list">
