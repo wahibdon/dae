@@ -1,11 +1,14 @@
 <?php 
 $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
-echo get_query_var('term');
+echo $term;
 get_header(); 
 $terms = get_terms( 'prodcat');
 echo '  <ul class="subnav">';
 foreach ($terms as $tax_term) {
-    echo "      <li><a href=\"/index.php/prodcat/".$tax_term->slug."\">".$tax_term->name."</a></li>";
+    echo "      <li><a";
+    if ($term == $tax_term->slug)
+        echo " class=\"active\""
+    echo " href=\"/index.php/prodcat/".$tax_term->slug."\">".$tax_term->name."</a></li>";
 }
 echo "  </ul>";
 ?>
