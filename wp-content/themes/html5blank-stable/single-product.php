@@ -5,7 +5,7 @@ $terms = get_terms( 'prodcat');
 	    echo "      <li><a href=\"/index.php/prodcat/".$tax_term->slug."\">".$tax_term->name."</a></li>";
 	}
 	echo "  </ul>";
-	print_r($post);
+	print_r(wp_get_post_terms($post->ID, 'prodcat'));
 ?>	
 	<ul id="bread-crumbs">
 		<li><a href="internal-landing.html">All Products ></a></li>
