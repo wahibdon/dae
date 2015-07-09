@@ -1,6 +1,6 @@
 <?php 
 $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
-echo $term;
+print_r ( $term );
 get_header(); 
 $terms = get_terms( 'prodcat');
 echo '  <ul class="subnav">';
