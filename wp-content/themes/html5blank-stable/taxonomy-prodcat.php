@@ -15,9 +15,13 @@ echo "  </ul>";
     <ul id="product-list">
     <?php while (have_posts()) : the_post(); ?> 
     			<? $image = types_render_field("product-image", array('output' => 'raw', 'index' => '0'));
-    			print_r(wp_get_post_tags($post->ID));
+    			$tags = wp_get_post_tags($post->ID);
+                $tags_array = [];
+                foreach ($tags as $tag) {
+                    $tags_array[] = $tag->name;
+                }
                 ?>
-                <li class="single-product">
+                <li class="single-product" data-tags="<?=json_encode($tags_array); ?>">
                 	<a href="<?php the_permalink() ?>" rel="bookmark">
                 		<div>
                 			<div></div>
