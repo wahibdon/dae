@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<? $terms = get_terms( 'prodcat');
-	echo "<ul class=\"internal-landing\">";
+	echo "<ul id=\"internal-landing\">";
 	foreach ($terms as $term){
 		?>
 		<li class="internal-landing">
