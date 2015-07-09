@@ -17,7 +17,7 @@
 		<form class="search" method="get" action="http://dae.ott-toolbox.com" role="search">
 			<label>
 				<input type="search" name="s" id="nav-search" class="search-input" placeholder="Search Site" />
-				<img src="<?php echo get_template_directory_uri(); ?>/images/nav-search.gif" alt="search" id="toggel-search" title="search" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/nav-search.gif" alt="search" id="toggle-search" title="search" />
 			</label>
 		</form>
 		<?php html5blank_nav(); ?>
