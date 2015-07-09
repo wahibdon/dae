@@ -564,6 +564,9 @@ ul#product-list li.single-product a p:last-child, ul#internal-landing li.interna
 	font-weight: 500;
 	margin-top: 10px;
 }
-section.search-results {
+section#search-results {
 	padding: 20px;
+}
+section#search-results h2 {
+	margin: 0;
 }
