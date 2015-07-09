@@ -93,7 +93,7 @@ ul.subnav li{
 ul.subnav li:after{
 	content: url("../images/menu-down-arrow.gif");
 }
-ul.subnav li:hover:after, ul.subnav li.active {
+ul.subnav li:hover:after, ul.subnav li.active:after {
 	content: url("../images/menu-down-arrow-active.gif");
 }
 ul.subnav li:hover, ul.subnav li.active {
