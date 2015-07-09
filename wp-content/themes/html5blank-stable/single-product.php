@@ -4,7 +4,7 @@ $terms = get_terms( 'prodcat');
 	echo '  <ul class="subnav">';
 	foreach ($terms as $tax_term) {
 	    echo "      <li";
-	    if ($term_slug == $tax_term->slug)
+	    if ($term_slug[0] == $tax_term->slug)
 	        echo " class=\"active\"";
 	    echo "><a href=\"/index.php/prodcat/".$tax_term->slug."\">".$tax_term->name."</a></li>";
 	}
