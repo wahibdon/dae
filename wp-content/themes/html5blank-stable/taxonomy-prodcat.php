@@ -1,6 +1,8 @@
 <?php 
 $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
-get_header(); ?>
+get_header(); 
+echo get_taxonomies( array('name' => 'prodcat'));
+?>
 
     <ul id="product-list">
     <?php while (have_posts()) : the_post(); ?> 
