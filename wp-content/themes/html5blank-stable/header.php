@@ -14,9 +14,9 @@
 <div id="container">
 	<nav>
 		<logo><a href="/"> <img src="<?php echo get_template_directory_uri(); ?>/images/dae-logo.gif" alt="DAE" title="DAE" /></a></logo>
-		<form>
+		<form class="search" method="get" action="http://dae.ott-toolbox.com" role="search">
 			<label>
-				<input type="text" name="search" id="nav-search" placeholder="Search Site" />
+				<input type="search" name="s" id="nav-search" class="search-input" placeholder="Search Site" />
 				<img src="<?php echo get_template_directory_uri(); ?>/images/nav-search.gif" alt="search" title="search" />
 			</label>
 		</form>
