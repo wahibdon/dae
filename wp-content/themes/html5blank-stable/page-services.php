@@ -33,6 +33,6 @@
 		}
 	?>
     </ul>
-    <?} else {echo "shit went wrong";}
+    <?} else {echo "shit went wrong";}?>
 
 <?php get_footer(); ?>
