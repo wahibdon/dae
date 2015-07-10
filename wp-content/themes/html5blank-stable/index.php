@@ -4,12 +4,15 @@ $eurl = types_render_field('event-link', array('output' => 'raw'));
 $eimage = types_render_field('event-image', array('output' => 'raw'));
 
 $products = new WP_Query(array('post_type' => 'product'));
-if($products->have_posts()){
-	while ($products->have_posts()){
-		$products->the_post();
-		echo types_render_field('featured-product', array('output' => 'raw'));
+while ($products->have_posts()){
+	$products->the_post();
+	if(types_render_field('featured-product', array('output' => 'raw'))){
+		$fp_image = types_render_field("product-image", array('output' => 'raw', 'index' => '0'));
+		$fp_title = $post->post_title;
+		$fp_content = substr($post->post_content, 0, 300)."...";
+		break;
 	}
-}else{echo "nope";}
+}
 
 ?>
 
@@ -36,11 +39,10 @@ if($products->have_posts()){
 		</ul>
 		<section id="css-index-featured-product">
 			<article>
-				<img src="<?php echo get_template_directory_uri(); ?>/images/enginelift.gif" />
-				<h1>Engine Stand X</h1>
+				<img src="<?=$fp_image;?>" />
+				<h1><?=$fp_title;?></h1>
 				<div>
-					<p>Ut mei purto expetenda, erat adipisci necessitatibus eam et. Impetus impedit expetenda no pr In pri aperiam similique. Sea honestatis mediocritatem ut.</p>
-					<p>Impetus impedit expetenda no pri, vitae nemore scripta vix ut. Impetus impedit expetenda no pr In pri aperiam vitae nemore scriptasimilique.</p>
+					<?=$fp_content;?>
 				</div>
 				<a href="product-page.html">See the specs &raquo;</a>
 			</article>
