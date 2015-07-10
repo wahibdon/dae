@@ -10,7 +10,8 @@ while ($products->have_posts()){
 		$fp_image = types_render_field("product-image", array('output' => 'raw', 'index' => '0'));
 		$fp_title = $post->post_title;
 		$fp_content = substr($post->post_content, 0, 300)."...";
-		$fp_link = $post->permalink;
+		$fp_link = get_permalink($post->ID);
+		echo $post->ID;
 		break;
 	}
 }
