@@ -34,7 +34,7 @@ while ($products->have_posts()){
 				<article>
 					<h1>$fs_title</h1>
 					<div>
-						$$fs_content
+						$fs_content
 					</div>
 				</article>
 			</a>
