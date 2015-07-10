@@ -402,6 +402,10 @@ footer span{
 	text-align: right;
 	display: none;
 }
+#css-index-spotlight section >a {
+	text-decoration: none;
+	color: #fff;
+}
 #css-index-spotlight section:first-of-type {
 	display: block;
 }
