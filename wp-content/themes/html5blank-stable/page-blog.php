@@ -13,16 +13,11 @@
 		while ($blog->have_posts()){
 			$blog->the_post();
 			?>
-			<li class="internal-landing">
-	        	<a href="<?="/index.php/blog-posts/".$post->post_name."/" ?>">
-	        		<div>
-	        			<div></div>
-	            		<img src="<?=types_render_field("blog-image", array('output' => 'raw')); ?>" />
-	            	</div>
-	                <h2><?=$post->post_title; ?></h2>
-	        		<p> <?=substr($post->post_content, 0, 500);?></p>
-	                <p>Read more &raquo;</p>
-	        	</a>
+		<li class="blog-landing">
+            	<img src="<?=types_render_field("blog-image", array('output' => 'raw')); ?>" />
+                <h2><?=$post->post_title; ?></h2>
+        		<p> <?=substr($post->post_content, 0, 500);?></p>
+                <p><a href="<?="/index.php/blog-posts/".$post->post_name."/" ?>">Read more &raquo;</a></p>
 	        </li>
 			<?
 		}
