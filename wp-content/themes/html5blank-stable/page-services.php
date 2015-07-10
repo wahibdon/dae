@@ -6,7 +6,7 @@
 	'fallback_cb' => false,
 	'items_wrap' => '<ul class="%2$s">%3$s</ul>'
 )); 
-	$posts = WP_Query(array('post_type'=>'service'));
+	$posts = new WP_Query(array('post_type'=>'service'));
 	print_r($posts);
 
 	/*get_posts(array(
@@ -30,10 +30,10 @@
 	                <p>Read more &raquo;</p>
 	        	</a>
 	        </li>
-	        <?
+			<?
 		}
-	?>
-    </ul>
-    <?} else {echo "shit went wrong";}?>
+		?>
+		</ul>
+	<?} else {echo "shit went wrong";}?>
 
 <?php get_footer(); ?>
