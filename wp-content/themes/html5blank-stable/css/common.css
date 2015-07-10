@@ -497,6 +497,8 @@ footer span{
 	list-style-type: none;
 	border-bottom: 1px solid #ccc;
 	padding: 5px;
+	white-space: nowrap;
+	overflow: hidden;
 }
 #css-index-news > ul > li > a {
 	text-decoration: none;
