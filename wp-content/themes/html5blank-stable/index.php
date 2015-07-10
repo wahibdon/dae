@@ -1,7 +1,7 @@
 <?php get_header(); 
-$event = new WP_Query(array('post_type' => 'event'));
-while($event->has_posts()){
-	$event->the_post();
+$events = new WP_Query(array('post_type' => 'event'));
+while($events->has_posts()){
+	$events->the_post();
 	$eurl = types_render_field('event-link', array('output' => 'raw'));
 	$eimage = types_render_field('event-image', array('output' => 'raw'));
 	break;
