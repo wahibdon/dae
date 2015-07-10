@@ -22,10 +22,10 @@
 	        	<a href="<?="/index.php/service/".$post->post_name."/" ?>">
 	        		<div>
 	        			<div></div>
-	            		<img src="<?=get_field("services-image", array('output' => 'raw')); ?>" />
+	            		<img src="<?=types_render_field("services-image", array('output' => 'raw')); ?>" />
 	            	</div>
 	                <h2><?=$post->post_title; ?></h2>
-	        		<p> <?=$post->description;?></p>
+	        		<p> <?=types_render_field("services-description", array('output' => 'raw'));?></p>
 	                <p>Read more &raquo;</p>
 	        	</a>
 	        </li>
