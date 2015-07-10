@@ -6,12 +6,13 @@
 	'fallback_cb' => false,
 	'items_wrap' => '<ul class="%2$s">%3$s</ul>'
 )); ?>
-	<? /*$terms = get_terms( 'prodcat');
-	echo '  <ul class="subnav">';
-	foreach ($terms as $tax_term) {
-	    echo "      <li><a href=\"/index.php/prodcat/".$tax_term->slug."\">".$tax_term->name."</a></li>";
-	}
-	echo "  </ul>";
+	<?
+	print_r(get_posts(array(
+		'posts_per_page' => -1,
+		'post_type' => 'service',
+		'orderby' => 'title'
+	)));
+	/*
 	echo "<ul id=\"internal-landing\">";
 	foreach ($terms as $term){
 		?>
@@ -29,8 +30,5 @@
         <?
 	}
 	*/?>
-
-	<?php get_search_form(); ?>
-
 
 <?php get_footer(); ?>
