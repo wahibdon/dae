@@ -53,8 +53,8 @@ while ($news->have_posts()){
 	</div>
 	<div id="css-index-more-info">
 		<ul id="css-index-more-info-links">
-			<li><a id="" href="featured-product.html">Featured Product</a></li>
-			<li><a href="news.html">News</a></li>
+			<li><a id="feature-toggle" href="featured-product.html">Featured Product</a></li>
+			<li><a id="news-toggle" href="news.html">News</a></li>
 			<li><a href="<?=$eurl;?>"><img src="<?=$eimage; ?>"></a></li>
 		</ul>
 		<section id="css-index-featured-product">
