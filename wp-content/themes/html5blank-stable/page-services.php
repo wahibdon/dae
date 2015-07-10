@@ -6,17 +6,17 @@
 	'fallback_cb' => false,
 	'items_wrap' => '<ul class="%2$s">%3$s</ul>'
 )); 
-	$posts = new WP_Query(array('post_type'=>'service'));
+	$services = new WP_Query(array('post_type'=>'service'));
 
 	/*get_posts(array(
 		'posts_per_page' => -1,
 		'post_type' => 'service',
 		'orderby' => 'title'
 	))*/;
-	if( $posts->have_posts() ){
+	if( $services->have_posts() ){
 		echo "<ul id=\"internal-landing\">";
-		while ($posts->have_posts()){
-			$posts->$the_post();
+		while ($services->have_posts()){
+			$services->$the_post();
 			?>
 			<li class="internal-landing">
 	        	<a href="<?="/index.php/service/".$post->post_name."/" ?>">
