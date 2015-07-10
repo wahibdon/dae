@@ -17,7 +17,8 @@
 		echo "<ul id=\"internal-landing\">";
 		while ($services->have_posts()){
 			$services->$the_post();
-			echo "<li class=\"internal-landing\">
+			echo "hmmm";
+			echo "<li class=\"internal-landing\">";/*
 	        	<a href=\"/index.php/service/".$post->post_name."/\">
 	        		<div>
 	        			<div></div>
@@ -26,8 +27,8 @@
 	                <h2>".$post->post_title."</h2>
 	        		<p>".$post->description."</p>
 	                <p>Read more &raquo;</p>
-	        	</a>
-	        </li>";
+	        	</a>*/
+	        echo "</li>";
 		}
 		echo "</ul>";
 	} else {echo "shit went wrong";}?>
