@@ -499,7 +499,7 @@ function build_rec_table($table_array){
 function add_login_out_item_to_menu( $items, $args ){
 
     //change theme location with your them location name
-    if( is_admin() ||  $args->theme_location != 'primary' )
+    if( is_admin() ||  $args->theme_location != 'header-menu' )
         return $items; 
 
     $redirect = ( is_home() ) ? false : get_permalink();
