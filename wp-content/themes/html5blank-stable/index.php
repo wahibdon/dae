@@ -1,8 +1,8 @@
 <?php get_header(); 
 $event = new WP_Query('p=115');
-print_r($event);
 while($event->have_posts()){
 	$event->the_post();
+	print_r($post);
 	$eurl = types_render_field('event-link', array('output' => 'raw'));
 	$eimage = types_render_field('event-image', array('output' => 'raw'));
 }
