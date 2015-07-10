@@ -4,6 +4,7 @@ $event = new WP_Query('p=115');
 	print_r($post);
 	$eurl = types_render_field('event-link', array('output' => 'raw'));
 	$eimage = types_render_field('event-image', array('output' => 'raw'));
+	echo get_permalink();
 ?>
 
 	<div id="css-index-spotlight">
