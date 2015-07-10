@@ -20,7 +20,7 @@ wp_nav_menu(array(
 		</aside>
 		<img src="<?=types_render_field('info-image', array('output' => 'raw')); ?>" />
 		<?
-			the_post();
+			
 			echo "<article>";
 			the_content();
 			echo "</article>";
