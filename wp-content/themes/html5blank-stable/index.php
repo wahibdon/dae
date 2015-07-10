@@ -19,6 +19,23 @@ while ($products->have_posts()){
 	}
 }
 
+$products = new WP_Query(array('post_type' => 'product'));
+$fs = "";
+while ($products->have_posts()){
+	$products->the_post();
+	if(types_render_field('front-slider', array('output' => 'raw'))){
+		$fs_image = types_render_field("product-image", array('output' => 'raw', 'index' => '0'));
+		$fs_title = $post->post_title;
+		$fs_content = substr($post->post_content, 0, 300)."...";
+		$fs_link = get_permalink($post->ID);
+		$fs .= "<h1>fs_title</h1>
+				<div>
+					<p>Ut mei purto expetenda, erat adipisci necessitatibus eam et. Impetus impedit expetenda no pr In pri aperiam similique. Sea honestatis mediocritatem ut.</p>
+					<p>Impetus impedit expetenda no pri, vitae nemore scripta vix ut. Impetus impedit expetenda no pr In pri aperiam vitae nemore scriptasimilique.</p>
+				</div>"
+	}
+}
+
 $news = new WP_Query(array('post_type' => 'blog-post', 'posts_per_page' => '9', 'orderby' => 'date', 'order' => 'DESC'));
 $news_list = "";
 while ($news->have_posts()){
@@ -39,9 +56,9 @@ while ($news->have_posts()){
 
 
 	<div id="css-index-spotlight">
+		<img class="left-arrow" src="<?php echo get_template_directory_uri(); ?>/images/home-left-arrow.gif" /><img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/images/home-right-arrow.gif" />
 		<section>
 			<img src="<?php echo get_template_directory_uri(); ?>/images/enginelift.gif" />
-			<img class="left-arrow" src="<?php echo get_template_directory_uri(); ?>/images/home-left-arrow.gif" /><img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/images/home-right-arrow.gif" />
 			<article>
 				<h1>Engine Stand X</h1>
 				<div>
