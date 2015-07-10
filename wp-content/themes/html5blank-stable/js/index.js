@@ -1,16 +1,16 @@
 var feature = document.getElementById('css-index-featured-product');
 var news = document.getElementById('css-index-news');
 document.getElementById('feature-toggle').addEventListener('click', function(){
-	if (feature.style.display == 'none')
-		feature.style.display = 'block';
-	else
+	if (feature.style.display == 'block')
 		feature.style.display = 'none';
+	else
+		feature.style.display = 'block';
 	news.style.display = "none";
 });
 document.getElementById('news-toggle').addEventListener('click', function(){
-	if (news.style.display == 'none')
-		news.style.display = 'block';
-	else
+	if (news.style.display == 'block')
 		news.style.display = 'none';
+	else
+		news.style.display = 'block';
 	feature.style.display = "none";
 });
