@@ -18,7 +18,7 @@ wp_nav_menu(array(
 				Louisville, KY 40203
 			</address>
 		</aside>
-		<img src="<?="htp://dae.ott-toolbox.com/static-html/images/aboutbg.png" ?>" />
+		<img src="<?=types_render_field('info-image', array('output' => 'raw')); ?>" />
 		<?while(have_posts()){
 			the_post();
 			echo "<article>";

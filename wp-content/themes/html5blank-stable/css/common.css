@@ -322,10 +322,7 @@ aside a, aside address {
 	font-style: normal;
 }
 section#blog > img {
-	position: fixed;
-	top: -50px;
-	z-index: 0;
-	display: block;
+	float: left;
 }
 section#blog article{
 	padding-left: 350px;
