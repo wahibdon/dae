@@ -7,6 +7,7 @@
 	'items_wrap' => '<ul class="%2$s">%3$s</ul>'
 )); 
 	$posts = WP_Query(array('post_type'=>'services'));
+	print_r($posts);
 
 	/*get_posts(array(
 		'posts_per_page' => -1,
