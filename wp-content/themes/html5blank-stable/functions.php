@@ -494,10 +494,19 @@ function build_rec_table($table_array){
     }
     $table .="</tbody></table>";
     return $table;
-}
-add_filter('wp_nav_menu_items','show_register_login_link');
-function show_register_login_link($nav) {
-    // The "Register" link is not offered if the Administration > Settings > General > Membership: Anyone can register box is not checked.
-    return $nav."<li class='menu-item'>".wp_loginout(get_site_url(), false)."</li>";
-}
+}]
+//Add login/logout link to naviagation menu
+function add_login_out_item_to_menu( $items, $args ){
+
+    //change theme location with your them location name
+    if( is_admin() ||  $args->theme_location != 'primary' )
+        return $items; 
+
+    $redirect = ( is_home() ) ? false : get_permalink();
+    if( is_user_logged_in( ) )
+        $link = '<a href="' . wp_logout_url( $redirect ) . '" title="' .  __( 'Logout' ) .'">' . __( 'Logout' ) . '</a>';
+    else  $link = '<a href="' . wp_login_url( $redirect  ) . '" title="' .  __( 'Login' ) .'">' . __( 'Login' ) . '</a>';
+
+    return $items.= '<li id="log-in-out-link" class="menu-item menu-type-link">'. $link . '</li>';
+}add_filter( 'wp_nav_menu_items', 'add_login_out_item_to_menu', 50, 2 );
 ?>
