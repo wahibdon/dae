@@ -19,7 +19,7 @@ while ($products->have_posts()){
 	}
 }
 
-$news = new WP_Query(array('post_type' => 'blog-post', 'posts_per_page' => '9', 'orderby' => 'date', 'order' => 'ASC'));
+$news = new WP_Query(array('post_type' => 'blog-post', 'posts_per_page' => '9', 'orderby' => 'date', 'order' => 'DESC'));
 $news_list = "";
 while ($news->have_posts()){
 	$news->the_post();
