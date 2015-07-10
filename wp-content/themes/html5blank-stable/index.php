@@ -5,7 +5,6 @@ while($event->have_posts()){
 	$event->the_post();
 	$eurl = types_render_field('event-link', array('output' => 'raw'));
 	$eimage = types_render_field('event-image', array('output' => 'raw'));
-	break;
 }
 ?>
 
