@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php get_header(); 
+$event = new WP_Query('p=115');
+while($event->have_posts()){
+	$event->the_post();
+	$eurl = types_render_field('event-link', array('output' => 'raw'));
+	$eimage = types_render_field('event-image', array('output' => 'raw'));
+}
+?>
 
 	<div id="css-index-spotlight">
 		<section>
@@ -17,7 +24,7 @@
 		<ul id="css-index-more-info-links">
 			<li><a id="" href="featured-product.html">Featured Product</a></li>
 			<li><a href="news.html">News</a></li>
-			<li><a href="http://outsidelink.com"><img src="<?php echo get_template_directory_uri(); ?>/images/inter-airport.gif"></a></li>
+			<li><a href="<?=$eurl;"><img src="<?=$eimage; ?>"></a></li>
 		</ul>
 		<section id="css-index-featured-product">
 			<article>
