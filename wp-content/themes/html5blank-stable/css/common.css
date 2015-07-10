@@ -572,3 +572,15 @@ section#search-results {
 section#search-results h2 {
 	margin: 0;
 }
+li.blog-landing {
+	overflow: auto;
+	list-style-type: none;
+	margin: 20px;
+	margin-bottom: 20px;
+}
+li.blog-landing img {
+  width: 275px;
+  float: left;
+  height: 150px;
+  margin-right: 20px;
+}
