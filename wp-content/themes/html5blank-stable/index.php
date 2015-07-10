@@ -29,7 +29,7 @@ while ($products->have_posts()){
 		$fs_content = substr($post->post_content, 0, 300)."...";
 		$fs_link = get_permalink($post->ID);
 		$fs .= "<section>
-			<a href=\"fs_link\">
+			<a href=\"$fs_link\">
 				<img src=\"$fs_image\" />
 				<article>
 					<h1>$fs_title</h1>

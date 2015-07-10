@@ -402,9 +402,6 @@ footer span{
 	text-align: right;
 	display: none;
 }
-#css-index-spotlight section:first-child{
-	display: block;
-}
 #css-index-spotlight section h1{
 	font-size: 16px;
 	color: #A9AFCC;
