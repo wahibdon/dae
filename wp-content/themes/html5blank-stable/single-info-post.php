@@ -8,11 +8,11 @@ wp_nav_menu(array(
 )); ?>
 	<section id="blog">
 		<aside>
-			<img src="images/phone.gif" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/phone.gif" />
 			<a href="tel:+1">5025855951</a>
-			<img src="images/email.gif" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/email.gif" />
 			<a href="mailto:email@example.com">mail@dae.com</a>
-			<img src="images/location.gif" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/location.gif" />
 			<address>
 				501 South 15th Street<br />
 				Louisville, KY 40203
