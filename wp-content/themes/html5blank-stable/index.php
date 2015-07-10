@@ -3,7 +3,7 @@ $event = new WP_Query('p=115');
 while($event->have_posts()){
 	$event->the_post();
 	$eurl = types_render_field('event-link', array('output' => 'raw'));
-	print_r($post);
+	print_r($event);
 	$eimage = types_render_field('event-image', array('output' => 'raw'));
 	break;
 }
