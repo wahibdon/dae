@@ -3,7 +3,6 @@ $event = new WP_Query('p=115');
 $post = get_post(115);
 	$eurl = types_render_field('event-link', array('output' => 'raw'));
 	$eimage = types_render_field('event-image', array('output' => 'raw'));
-}
 ?>
 
 	<div id="css-index-spotlight">
