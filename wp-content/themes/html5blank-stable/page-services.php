@@ -16,8 +16,8 @@
 	if( $services->have_posts() ){
 		echo "<ul id=\"internal-landing\">";
 		while ($services->have_posts()){
-			echo "hmmm";
 			$services->$the_post();
+			echo "hmmm";
 			?>
 			<li class="internal-landing">
 	        	<a href="<?="/index.php/service/".$post->post_name."/" ?>">
