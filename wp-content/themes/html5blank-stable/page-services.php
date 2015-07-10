@@ -1,5 +1,9 @@
 <?php get_header(); ?>
-
+<? wp_nav_menu(array(
+	'menu' => 'services-menu',
+	'menu_class' => 'subnav',
+	'items_wrap' => '<ul class="%2$s">%3$s</ul>'
+)); ?>
 	<? /*$terms = get_terms( 'prodcat');
 	echo '  <ul class="subnav">';
 	foreach ($terms as $tax_term) {
