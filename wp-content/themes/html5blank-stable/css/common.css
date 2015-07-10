@@ -89,6 +89,7 @@ ul.subnav {
 	text-align: center;
 	height: 35px;
 	padding-top: 5px;
+	z-index: 99;
 }
 ul.subnav li{
 	display: inline-block;
@@ -322,13 +323,14 @@ aside a, aside address {
 }
 section#blog > img {
 	position: fixed;
-	left: 0;
+	top: -50px;
 	z-index: -100;
 	display: block;
 	width: 325px;
 	height: 100%;
 }
 section#blog article{
+	padding-left: 350px;
 	padding-top: 15px;
 	font-size: 11px;
 }
@@ -343,7 +345,6 @@ section#blog > article {
 	background-repeat: no-repeat;
 }
 article#about{
-	padding-left: 350px;
 	min-height: 720px;
 }
 article#about p {
