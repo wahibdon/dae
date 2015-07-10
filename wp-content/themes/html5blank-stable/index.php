@@ -1,7 +1,7 @@
 <?php get_header(); 
 $thisvar = new WP_Query(array('post_type' => 'event'));
 	print_r($thisvar);
-while($thisvar->has_posts()){
+while($thisvar->have_posts()){
 	$thisvar->the_post();
 	$eurl = types_render_field('event-link', array('output' => 'raw'));
 	$eimage = types_render_field('event-image', array('output' => 'raw'));
