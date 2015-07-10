@@ -30,7 +30,7 @@ while ($news->have_posts()){
 		$bn_content = substr($post->post_content, 0, 200)."...";
 		$bn_link = get_permalink($post->ID);
 	}else{
-		$news_list .= "<li><a href=\"".get_permalink($post->ID).\"><span>".$post->post_date."</span> ".$post->post_title."</a></li>";
+		$news_list .= "<li><a href=\"".get_permalink($post->ID)."\"><span>".$post->post_date."</span> ".$post->post_title."</a></li>";
 	}
 }
 
