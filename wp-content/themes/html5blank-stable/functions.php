@@ -494,7 +494,7 @@ function build_rec_table($table_array){
     }
     $table .="</tbody></table>";
     return $table;
-}]
+}
 //Add login/logout link to naviagation menu
 function add_login_out_item_to_menu( $items, $args ){
 
