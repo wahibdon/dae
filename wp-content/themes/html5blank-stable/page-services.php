@@ -16,6 +16,7 @@
 	if( $services->have_posts() ){
 		echo "<ul id=\"internal-landing\">";
 		while ($services->have_posts()){
+			echo "hmmm";
 			$services->$the_post();
 			?>
 			<li class="internal-landing">
