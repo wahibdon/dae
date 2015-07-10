@@ -1,7 +1,11 @@
 <?php get_header(); 
-$post = get_post(115);
-$eurl = types_render_field('event-link', array('output' => 'raw'));
-$eimage = types_render_field('event-image', array('output' => 'raw'));
+$event = new WP_Query(array('post_type' => 'event'));
+while($event->has_posts()){
+	$event->the_post();
+	$eurl = types_render_field('event-link', array('output' => 'raw'));
+	$eimage = types_render_field('event-image', array('output' => 'raw'));
+	break;
+}
 
 $products = new WP_Query(array('post_type' => 'product'));
 while ($products->have_posts()){
@@ -11,7 +15,6 @@ while ($products->have_posts()){
 		$fp_title = $post->post_title;
 		$fp_content = substr($post->post_content, 0, 300)."...";
 		$fp_link = get_permalink($post->ID);
-		echo $post->ID;
 		break;
 	}
 }
