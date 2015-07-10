@@ -19,12 +19,12 @@ wp_nav_menu(array(
 			</address>
 		</aside>
 		<img src="<?=types_render_field('info-image', array('output' => 'raw')); ?>" />
-		<?while(have_posts()){
+		<?
 			the_post();
 			echo "<article>";
 			the_content();
 			echo "</article>";
-		}?>
+		?>
 	</section>
 
 <?php get_footer(); ?>
