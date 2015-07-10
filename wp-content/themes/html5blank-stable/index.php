@@ -1,6 +1,5 @@
 <?php get_header(); 
 $thisvar = new WP_Query(array('post_type' => 'event'));
-	print_r($thisvar);
 while($thisvar->have_posts()){
 	$thisvar->the_post();
 	$eurl = types_render_field('event-link', array('output' => 'raw'));
@@ -17,6 +16,21 @@ while ($products->have_posts()){
 		$fp_content = substr($post->post_content, 0, 300)."...";
 		$fp_link = get_permalink($post->ID);
 		break;
+	}
+}
+
+$news = new WP_Query(array('post_type' => 'blog-post', 'posts_per_page' => '9', 'orderby' => 'date', 'order' = 'ASC'));
+$news_list = "";
+while ($news->have_posts()){
+	$news->the_post();
+	if ($news->current_post == 0){
+		$bn_image = types_render_field('blog-image', array('output' => 'raw'));
+		$bn_date = $post->post_date;
+		$bn_title = $post->post_title;
+		$bn_content = substr($post->post_content, 0, 200)."...";
+		$bn_link = get_permalink($post->ID);
+	}else{
+		$news_list .= "<li><a href=\"".get_permalink($post->ID).\"><span>".$post->post_date."</span> ".$post->post_title."</a></li>";
 	}
 }
 
@@ -55,23 +69,16 @@ while ($products->have_posts()){
 		</section>
 		<section id="css-index-news">
 			<ul>
-				<li><a href="news-item.html"><span>July 8</span> Past News Headline</a></li>
-				<li><a href="news-item.html"><span>July 7</span> Past News Headline</a></li>
-				<li><a href="news-item.html"><span>July 6</span> Past News Headline</a></li>
-				<li><a href="news-item.html"><span>July 5</span> Past News Headline</a></li>
-				<li><a href="news-item.html"><span>July 4</span> Past News Headline</a></li>
-				<li><a href="news-item.html"><span>July 3</span> Past News Headline</a></li>
-				<li><a href="news-item.html"><span>July 2</span> Past News Headline</a></li>
-				<li><a href="news-item.html"><span>July 1</span> Past News Headline</a></li>
+				<?=$news_list;?>
 			</ul>
 			<article>
-				<img src="<?php echo get_template_directory_uri(); ?>/images/news-placeholder.jpg" />
-				<h1>This is the News Headline</h1>
+				<img src="<?=$bn_image;?>" />
+				<h1><?=$bn_title;?></h1>
 				<div>
-					<p>Byline <time pubdate datetime="2015-05-14">09 May 2015</time></p>
-					<p>Phasellus eu lacus non velit consequat facilisis. Aliquam aliquet nisl mattis eros viverra, eget rutrum diam gravida. Pellentesque turpis neque, lobortis a semper ut, volutpat vestibulum arcu...</p>
+					<p><time pubdate datetime="<?=$bn_date;?>"><?=$bn_date;?></time></p>
+					<p><?=$bn_content;?></p>
 				</div>
-				<a href="news-item.html">Read more &raquo;</a>
+				<a href="<?=$bn_link;?>">Read more &raquo;</a>
 			</article>
 		</section>
 	</div>
