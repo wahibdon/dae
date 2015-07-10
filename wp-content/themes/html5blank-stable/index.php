@@ -10,6 +10,7 @@ while ($products->have_posts()){
 		$fp_image = types_render_field("product-image", array('output' => 'raw', 'index' => '0'));
 		$fp_title = $post->post_title;
 		$fp_content = substr($post->post_content, 0, 300)."...";
+		$fp_link = $post->permalink;
 		break;
 	}
 }
@@ -44,7 +45,7 @@ while ($products->have_posts()){
 				<div>
 					<?=$fp_content;?>
 				</div>
-				<a href="product-page.html">See the specs &raquo;</a>
+				<a href="<?=$fp_link;?>">See the specs &raquo;</a>
 			</article>
 		</section>
 		<section id="css-index-news">
