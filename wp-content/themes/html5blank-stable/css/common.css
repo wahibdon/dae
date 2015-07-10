@@ -463,6 +463,7 @@ footer span{
 	font-size: 11px;
 	overflow: auto;
 	display: none;
+	cursor: pointer;
 }
 #css-index-featured-product img, #css-index-news img {
 	display: block;
