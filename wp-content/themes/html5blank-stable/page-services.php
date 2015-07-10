@@ -7,28 +7,29 @@
 	'items_wrap' => '<ul class="%2$s">%3$s</ul>'
 )); ?>
 	<?
-	print_r(get_posts(array(
+	$posts = get_posts(array(
 		'posts_per_page' => -1,
 		'post_type' => 'service',
 		'orderby' => 'title'
-	)));
-	/*
+	));
+	
 	echo "<ul id=\"internal-landing\">";
-	foreach ($terms as $term){
+	foreach ($posts as $post){
 		?>
 		<li class="internal-landing">
-        	<a href="<?="/index.php/prodcat/".$term->slug."/" ?>">
+        	<a href="<?="/index.php/service/".$post->post_name."/" ?>">
         		<div>
         			<div></div>
-            		<img src="<?=get_field("products_image", $term->taxonomy."_".$term->term_id)?>" />
+            		<img src="<?=get_field("services-image", array('output' => 'raw')); ?>" />
             	</div>
-                <h2><?=$term->name; ?></h2>
-        		<p> <?=$term->description;?></p>
-                <p>Go to product &raquo;</p>
+                <h2><?=$post->post_title; ?></h2>
+        		<p> <?=//$post->description;?></p>
+                <p>Read more &raquo;</p>
         	</a>
         </li>
         <?
 	}
-	*/?>
+	?>
+    </ul>
 
 <?php get_footer(); ?>
