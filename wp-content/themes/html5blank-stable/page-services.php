@@ -23,7 +23,7 @@
             		<img src="<?=get_field("services-image", array('output' => 'raw')); ?>" />
             	</div>
                 <h2><?=$post->post_title; ?></h2>
-        		<p> <?=//$post->description;?></p>
+        		<p> <?//$post->description;?></p>
                 <p>Read more &raquo;</p>
         	</a>
         </li>
