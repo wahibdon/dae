@@ -4,10 +4,12 @@ $eurl = types_render_field('event-link', array('output' => 'raw'));
 $eimage = types_render_field('event-image', array('output' => 'raw'));
 
 $products = new WP_Query(array('post_type' => 'product'));
-while ($products->have_posts()){
-	$products->the_post();
-	echo types_render_field('featured-product', array('output' => 'raw'));
-}
+if($products->have_posts()){
+	while ($products->have_posts()){
+		$products->the_post();
+		echo types_render_field('featured-product', array('output' => 'raw'));
+	}
+}else{echo "nope";}
 
 ?>
 
