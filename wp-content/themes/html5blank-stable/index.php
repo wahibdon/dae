@@ -1,9 +1,17 @@
 <?php get_header(); 
-$event = new WP_Query('p=115');
 $post = get_post(115);
-	$eurl = types_render_field('event-link', array('output' => 'raw'));
-	$eimage = types_render_field('event-image', array('output' => 'raw'));
+$eurl = types_render_field('event-link', array('output' => 'raw'));
+$eimage = types_render_field('event-image', array('output' => 'raw'));
+
+$products = new WP_Query(array('post_type' => 'product'));
+while ($products->have_posts()){
+	$products->the_post();
+	echo types_render_field('featured-product', array('output' => 'raw'));
+}
+
 ?>
+
+
 
 	<div id="css-index-spotlight">
 		<section>
