@@ -17,23 +17,19 @@
 		echo "<ul id=\"internal-landing\">";
 		while ($services->have_posts()){
 			$services->$the_post();
-			echo "hmmm";
-			?>
-			<li class="internal-landing">
-	        	<a href="<?="/index.php/service/".$post->post_name."/" ?>">
+			echo "<li class=\"internal-landing\">
+	        	<a href=\"/index.php/service/".$post->post_name."/\">
 	        		<div>
 	        			<div></div>
-	            		<img src="<?=get_field("services-image", array('output' => 'raw')); ?>" />
+	            		<img src=\"".get_field("services-image", array('output' => 'raw'))." />
 	            	</div>
-	                <h2><?=$post->post_title; ?></h2>
-	        		<p> <?=$post->description;?></p>
+	                <h2>".$post->post_title."</h2>
+	        		<p>".$post->description".</p>
 	                <p>Read more &raquo;</p>
 	        	</a>
-	        </li>
-			<?
+	        </li>";
 		}
-		?>
-		</ul>
-	<?} else {echo "shit went wrong";}?>
+		echo "</ul>";
+	} else {echo "shit went wrong";}?>
 
 <?php get_footer(); ?>
