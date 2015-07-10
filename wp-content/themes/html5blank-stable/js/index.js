@@ -13,4 +13,4 @@ document.getElementById('news-toggle').addEventListener('click', function(){
 	else
 		news.style.display = 'none';
 	feature.style.display = "none";
-})l
+});

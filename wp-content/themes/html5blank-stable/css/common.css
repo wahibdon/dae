@@ -463,6 +463,8 @@ footer span{
 	font-size: 11px;
 	overflow: auto;
 	display: none;
+}
+#feature-toggle, #news-toggle{
 	cursor: pointer;
 }
 #css-index-featured-product img, #css-index-news img {
