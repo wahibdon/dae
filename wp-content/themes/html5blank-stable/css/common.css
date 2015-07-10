@@ -324,7 +324,7 @@ aside a, aside address {
 section#blog > img {
 	position: fixed;
 	top: -50px;
-	z-index: -100;
+	z-index: 0;
 	display: block;
 	width: 325px;
 	height: 100%;
