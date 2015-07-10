@@ -6,7 +6,7 @@
 	'fallback_cb' => false,
 	'items_wrap' => '<ul class="%2$s">%3$s</ul>'
 )); 
-	$posts = WP_Query(array('post_type'=>'services'));
+	$posts = WP_Query(array('post_type'=>'service'));
 	print_r($posts);
 
 	/*get_posts(array(
