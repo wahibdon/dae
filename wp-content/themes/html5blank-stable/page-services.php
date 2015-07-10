@@ -31,8 +31,8 @@
 	        </li>
 	        <?
 		}
-	}
 	?>
     </ul>
+    <?} else {echo "shit went wrong";}
 
 <?php get_footer(); ?>
