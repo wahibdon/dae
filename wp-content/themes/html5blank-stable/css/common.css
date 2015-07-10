@@ -418,13 +418,13 @@ footer span{
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
 }
-#css-index-spotlight section img.left-arrow, #css-index-spotlight section img.right-arrow{ 
+#css-index-spotlight img.left-arrow, #css-index-spotlight img.right-arrow{ 
 	display: block;
 	position: absolute;
 	bottom: 20px;
 }
-#css-index-spotlight section img.left-arrow{ left: 0; }
-#css-index-spotlight section img.right-arrow{ right: 0; }
+#css-index-spotlight img.left-arrow{ left: 0; }
+#css-index-spotlight img.right-arrow{ right: 0; }
 #css-index-more-info {
 	background-color: #e6e6e6;
 	overflow: auto;
