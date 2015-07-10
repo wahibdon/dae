@@ -28,11 +28,17 @@ while ($products->have_posts()){
 		$fs_title = $post->post_title;
 		$fs_content = substr($post->post_content, 0, 300)."...";
 		$fs_link = get_permalink($post->ID);
-		$fs .= "<h1>fs_title</h1>
-				<div>
-					<p>Ut mei purto expetenda, erat adipisci necessitatibus eam et. Impetus impedit expetenda no pr In pri aperiam similique. Sea honestatis mediocritatem ut.</p>
-					<p>Impetus impedit expetenda no pri, vitae nemore scripta vix ut. Impetus impedit expetenda no pr In pri aperiam vitae nemore scriptasimilique.</p>
-				</div>";
+		$fs .= "<section>
+			<a href=\"fs_link\">
+				<img src=\"$fs_image\" />
+				<article>
+					<h1>$fs_title</h1>
+					<div>
+						$$fs_content
+					</div>
+				</article>
+			</a>
+		</section>";
 	}
 }
 
@@ -57,16 +63,7 @@ while ($news->have_posts()){
 
 	<div id="css-index-spotlight">
 		<img class="left-arrow" src="<?php echo get_template_directory_uri(); ?>/images/home-left-arrow.gif" /><img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/images/home-right-arrow.gif" />
-		<section>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/enginelift.gif" />
-			<article>
-				<h1>Engine Stand X</h1>
-				<div>
-					<p>Ut mei purto expetenda, erat adipisci necessitatibus eam et. Impetus impedit expetenda no pr In pri aperiam similique. Sea honestatis mediocritatem ut.</p>
-					<p>Impetus impedit expetenda no pri, vitae nemore scripta vix ut. Impetus impedit expetenda no pr In pri aperiam vitae nemore scriptasimilique.</p>
-				</div>
-			</article>
-		</section>
+		<?=$fs;?>
 	</div>
 	<div id="css-index-more-info">
 		<ul id="css-index-more-info-links">
