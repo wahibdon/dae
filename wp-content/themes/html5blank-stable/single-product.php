@@ -42,7 +42,14 @@ $manual = $manual[count($manual)-1];
 		<? echo build_spec_table(get_field('recommendations')); ?>
 		<? echo build_spec_table(get_field('options')); ?>
 	</section>
-	<div style="display: none">
+	<div style="display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    box-shadow: 0px 2px 12px -1px black;">
+    	<img src="<?php echo get_template_directory_uri(); ?>/images/close.png">
 		<span class='st_email_large' displayText='Email'></span>
 		<span class='st_facebook_large' displayText='Facebook'></span>
 		<span class='st_twitter_large' displayText='Tweet'></span>
