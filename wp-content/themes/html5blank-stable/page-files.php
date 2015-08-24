@@ -2,7 +2,8 @@
 	if ( is_user_logged_in() ) { 
 		echo "logged in";
 		if(isset($_GET['file'])){
-			if (file_exxists(__DIR__."/../../uploads/".$_GET['file'])) {
+			$file = __DIR__."/../../uploads/".$_GET['file'];
+			if (file_exists($file)) {
 			    header('Content-Description: File Transfer');
 			    header('Content-Type: application/octet-stream');
 			    header('Content-Disposition: attachment; filename="'.basename($file).'"');
