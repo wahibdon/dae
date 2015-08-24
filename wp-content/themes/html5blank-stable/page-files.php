@@ -1,8 +1,8 @@
 <?php
 	if ( is_user_logged_in() ) { 
 		echo "logged in";
-		echo __FILE__;
-		echo exec(ll);
+		echo __DIR__;
+		print_r( exec(ll));
 		/*if (__FILE__) {
 		    header('Content-Description: File Transfer');
 		    header('Content-Type: application/octet-stream');
