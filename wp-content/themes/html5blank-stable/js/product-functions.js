@@ -21,3 +21,10 @@ function setLargeImage(img){
 	}
 }
 setLargeImage(images[0]);
+document.getElementById('close-share').addEventListener('click', function(){
+	document.getElementById("share-box").style.display = "none";
+});
+document.getElementById('open-share').addEventListener('click', function(e){
+	e.preventDefault();
+	document.getElementById("share-box").style.display = "block";
+});

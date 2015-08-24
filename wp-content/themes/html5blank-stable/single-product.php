@@ -26,7 +26,7 @@ $manual = $manual[count($manual)-1];
 	</section>
 	<section id="images-rec">
 		<ul id="product-actions">
-			<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/share.gif" /></a></li>
+			<li><a id="share-open" href=""><img src="<?php echo get_template_directory_uri(); ?>/images/share.gif" /></a></li>
 			<li><a href="javascript:window.print();"><img src="<?php echo get_template_directory_uri(); ?>/images/print.gif" /></a></li>
 			<li><a target="_blank" href="<?php echo "http://dae.ott-toolbox.com/index.php/files/?file=$manual" ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/manual.gif" /></a></li>
 			<li><a target="_blank" href="<?php echo types_render_field('spec-sheet') ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/spec.gif" /></a></li>
@@ -42,14 +42,19 @@ $manual = $manual[count($manual)-1];
 		<? echo build_spec_table(get_field('recommendations')); ?>
 		<? echo build_spec_table(get_field('options')); ?>
 	</section>
-	<div style="display: none;
+	<div id="share-box" style="display: none;
     position: absolute;
     background-color: #fff;
     padding: 10px;
     border: 1px solid #999;
     border-radius: 5px;
     box-shadow: 0px 2px 12px -1px black;">
-    	<img src="<?php echo get_template_directory_uri(); ?>/images/close.png">
+    	<img id="close-share" style="position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -10px;
+    margin-right: -10px;
+    cursor: pointer;" src="<?php echo get_template_directory_uri(); ?>/images/close.png">
 		<span class='st_email_large' displayText='Email'></span>
 		<span class='st_facebook_large' displayText='Facebook'></span>
 		<span class='st_twitter_large' displayText='Tweet'></span>
