@@ -48,7 +48,10 @@ $manual = $manual[count($manual)-1];
     padding: 10px;
     border: 1px solid #999;
     border-radius: 5px;
-    box-shadow: 0px 2px 12px -1px black;">
+    box-shadow: 0px 2px 12px -1px black;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;">
     	<img id="close-share" style="position: absolute;
     top: 0;
     right: 0;
