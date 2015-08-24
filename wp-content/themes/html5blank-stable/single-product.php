@@ -27,7 +27,7 @@ $manual = $manual[count($manual)-1];
 	<section id="images-rec">
 		<ul id="product-actions">
 			<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/share.gif" /></a></li>
-			<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/print.gif" /></a></li>
+			<li><a href="javascript:window.print();"><img src="<?php echo get_template_directory_uri(); ?>/images/print.gif" /></a></li>
 			<li><a target="_blank" href="<?php echo "http://dae.ott-toolbox.com/index.php/files/?file=$manual" ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/manual.gif" /></a></li>
 			<li><a target="_blank" href="<?php echo types_render_field('spec-sheet') ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/spec.gif" /></a></li>
 		</ul>

@@ -69,7 +69,7 @@ while ($news->have_posts()){
 		<ul id="css-index-more-info-links">
 			<li><a id="feature-toggle">Featured Product</a></li>
 			<li><a id="news-toggle">News</a></li>
-			<li><a href="<?=$eurl;?>"><img src="<?=$eimage; ?>"></a></li>
+			<li><a target="_blank" href="<?=$eurl;?>"><img src="<?=$eimage; ?>"></a></li>
 		</ul>
 		<section id="css-index-featured-product">
 			<article>
