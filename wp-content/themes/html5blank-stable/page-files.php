@@ -1,19 +1,21 @@
 <?php
 	if ( is_user_logged_in() ) { 
 		echo "logged in";
-		echo __DIR__;
-		print_r( exec(ll));
-		/*if (__FILE__) {
-		    header('Content-Description: File Transfer');
-		    header('Content-Type: application/octet-stream');
-		    header('Content-Disposition: attachment; filename="'.basename($file).'"');
-		    header('Expires: 0');
-		    header('Cache-Control: must-revalidate');
-		    header('Pragma: public');
-		    header('Content-Length: ' . filesize($file));
-		    readfile($file);
-		    exit;
-		}*/
+		if(isset($_GET['file'])){
+			if (file_exxists(__DIR__."/../../uploads/".$_GET['file'])) {
+			    header('Content-Description: File Transfer');
+			    header('Content-Type: application/octet-stream');
+			    header('Content-Disposition: attachment; filename="'.basename($file).'"');
+			    header('Expires: 0');
+			    header('Cache-Control: must-revalidate');
+			    header('Pragma: public');
+			    header('Content-Length: ' . filesize($file));
+			    readfile($file);
+			    exit;
+			}
+		}else{
+			print_r($_REQUEST);
+		}
 	}else{
 		header("Location: /wp-login.php");
 	}
