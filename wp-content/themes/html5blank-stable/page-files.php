@@ -1,4 +1,7 @@
 <?php
-	echo "hello";
-	print_r($_GET);
+	if ( is_user_logged_in() ) { 
+		echo "logged in";
+	}else{
+		header("Location: /wp-login.php");
+	}
 ?>
