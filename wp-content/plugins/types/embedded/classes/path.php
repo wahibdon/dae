@@ -2,10 +2,6 @@
 /**
  * WPCF_Path
  *
- * $HeadURL: http://plugins.svn.wordpress.org/types/tags/1.6.6.6/embedded/classes/path.php $
- * $LastChangedDate: 2015-04-10 07:43:49 +0000 (Fri, 10 Apr 2015) $
- * $LastChangedRevision: 1131821 $
- * $LastChangedBy: iworks $
  *
  */
 final class WPCF_Path

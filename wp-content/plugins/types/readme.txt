@@ -4,8 +4,8 @@ Donate link: http://wp-types.com
 Tags: CMS, custom field, custom fields, custom post type, custom post types, field, fields post, post type, post types, taxonomies, taxonomy
 License: GPLv2
 Requires at least: 3.4
-Tested up to: 4.2.2
-Stable tag: 1.6.6.6
+Tested up to: 4.3
+Stable tag: 1.8
 
 The complete and reliable plugin for managing custom post types, custom taxonomies and custom fields.
 
@@ -143,19 +143,134 @@ Additionally, Types is the only plugin that lets you define parent/child relatio
 
 == Screenshots ==
 
-1. Custom post types list
-2. Defining custom taxonomies list
-3. Defining custom post type
-4. Defining custom fields (meta-groups)
-5. Editing custom fields
-6. Inserting custom fields to content
-7. Bulk editing child content using Field Tables
-8. Edit Custom Post Type
-9. Edit Taxonomy
+1. Post types list
+2. Custom taxonomies list
+3. Edit Custom Post Type
+4. Edit Taxonomy
+5. Editing custom fields group
+6. Editing user fields group
+7. Inserting custom fields to content
+8. Bulk editing child content using Field Tables
+9. Children post list
 
 == Changelog ==
 
+= 1.8 =
+
+* Release date: 2015-08-17
+* Added the ability to choose Custom Field as a column for Posts and Pages.
+* Added the ability to select the Feature image in the child Post table.
+* Added the ability to turn off the standard WordPress Custom Fields metabox.
+* Added default value to a Custom Field.
+* Added an "Edit" button for the parent post on the child Post editing page.
+* Added an error message for Custom Fields in children entries.
+* Added a new filter “wpcf_config_options_(type)”.
+* Added "ico" file type as a proper image file.
+* Added "parent" keyword into the list of reserved words for Custom Post Type or Custom Taxonomy name.
+* Added "select2" options script in parent Post field.
+* Changed "View template" string to "Content Template" in order to avoid inconsistencies.
+* Added a check for Custom Fields in order to display only active ones in lists.
+* Fixed a problem about the visibility of Types button in Post edit screen editor, when there are User Fields groups but no Custom Fields groups available.
+* Fixed a problem about the Module Manager box.
+* Fixed a problem with the usage of "dashboard_glance_items" filter.
+* Fixed a problem about alternative text and title of repetitive image fields.
+* Fixed a problem about lost translation when a parent Post was saved (https://wpml.org/forums/topic/custom-post-type-relationships/).
+* Fixed a conflict of validation field with CRED plugin.
+* Removed "Styling Editor" section in Custom Fields groups and User Fields groups edit screen. In order to enable it again, you can define “TYPES_USE_STYLING_EDITOR” constant in wp-config.php file.
+* Improved Module Manager box in Custom Post Type and Custom Taxonomy edit screen.
+* Moved marketing message into the "Need Help?" tab.
+* Reviewed "Add New" buttons in all edit screens for consistency.
+* Removed the "auto-import" option.
+* Turned off migration from "Advanced Custom Fields Pro", as this plugin has different data structure than "Advanced Custom Fields".
+* Updated list of Font Awesome icons.
+* Updated Skype field according to the new Skype Buttons API.
+
+= 1.7.11 =
+
+* Release date: 2015-08-05
+* Fixed a problem when saving HTML in meta fields.
+
+= 1.7.10 =
+
+* Release date: 2015-08-04
+* Fixed a problem when saving HTML in meta fields.
+
+= 1.7.9 =
+
+* Release date: 2015-08-04
+* Fixed a problem when saving HTML in meta fields.
+
+= 1.7.8 =
+
+* Release date: 2015-08-03
+* Fixed WYSIWYG field for WP 4.2.3 security release.
+* Added HTML frontend rendering settings.
+
+= 1.7.7 =
+
+* Release date: 2015-07-21
+* Fixed a problem with the Getting Started tutorials.
+
+= 1.7.6 =
+
+* Release date: 2015-07-20
+* Change Installer version to 1.6.4 - to reduce load time and avoid to much update requests.
+
+= 1.7.6 =
+
+* Release date: 2015-07-20
+* Change Installer version to 1.6.4 - to reduce load time and avoid to much update requests.
+
+= 1.7.5 =
+
+* Release date: 2015-07-15
+* Fixed a problem with Custom Fields Group edit screen to allow (again) underscore in Custom Fields names. https://wp-types.com/forums/topic/underscores-in-custom-field-names-possible-bug/
+
+= 1.7.4 =
+
+* Release date: 2015-07-09
+* Change Installer version to 1.6.1
+
+= 1.7.3 =
+
+* Release date: 2015-06-25
+* Fixed problem with "View All" in menu builder for Custom Post Types. https://wp-types.com/forums/topic/appearance-menu-php-errornotice/
+
+= 1.7.2 =
+
+* Release date: 2015-06-23
+* Field a problem with "file type" field on post edit screen when is no WYSIWYG editor. https://wordpress.org/support/topic/image-field-not-working-1
+
+= 1.7.1 =
+
+* Release date: 2015-06-22
+* Fixed a problem with constant ICL_SITEPRESS_VERSION https://wordpress.org/support/topic/types-17-notice-undefined-constant-icl_sitepress_version
+* Field a problem with "file type" field on user profile screen. https://wordpress.org/support/topic/image-field-not-working-1
+* Types and Access integration - You can define roles and control who can add, edit or change Custom Post Types, Custom Taxonomies, Custom Field Groups and User Meta Groups.
+
+= 1.7 =
+
+* Release date: 2015-06-15
+* Added the word "mode" to the list of words reserved by WordPress. https://wp-types.com/forums/topic/when-types-is-activated-i-cant-filter-articles-by-category-in-the-wp-backend/
+* Added the feature that automatically creates a slug for the Custom Post Type and Custom Taxonomy.
+* Added bulk delete options to Custom Field Groups listing page.
+* Added bulk delete options to Custom Post Types listing page.
+* Added bulk delete options to Custom Taxonomies listing page.
+* Added the automatic check of availability for the "Title" and "Editor" fields in the child relationship dialog.
+* Added the duplicate option for Custom Post Type and Custom Taxonomy.
+* Added the "Excerpt" field to the Child Posts table.
+* Added the "wpcf_field_image_max_width" filter which allows user to change image width on admin listing pages.
+* Added the option to specify the custom archive slug for the Custom Post Type http://wp-types.com/forums/topic/specify-cpt-archive-slug-as-string/
+* All custom fields on Custom Post Type listing pages are now sortable.
+* Changes to the Types fields GUI for easier support.
+* Fixed a problem with Custom Post Type, Custom Taxonomy and Custom Fields Group editing pages where forms would "freeze" after validation fails.
+* Fixed a problem with selecting an image for the Custom Image Field in the Child Posts table, after using the "Add New", "Save All" and "Save" buttons.  https://wp-types.com/forums/topic/featured-image-cannot-be-changed-after-first-save/
+* Fixed a problem with multi-line field not being wrapped with P (paragraph) HTML tag https://wp-types.com/forums/topic/multi-line-text-fields-are-missing-paragraph-tags/
+* Fixed problem with fields being covered by colorbox on the Custom Post Type editing page.
+* Fixed an issue where a wrong message was displayed when minimum number of characters has not been reached.
+
 = 1.6.6.6 =
+
 * Release date: 2015-06-10
 * Fixed problem with "playlist" word.  https://wp-types.com/forums/topic/front-end-warning-from-wysiwyg-php/
 

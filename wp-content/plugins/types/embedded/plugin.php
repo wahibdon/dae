@@ -5,14 +5,10 @@
   Description: Define custom post types, custom taxonomies and custom fields.
   Author: OnTheGoSystems
   Author URI: http://www.onthegosystems.com
-  Version: 1.6.6.6
+  Version: 1.8
  */
 /**
  *
- * $HeadURL: http://plugins.svn.wordpress.org/types/tags/1.6.6.6/embedded/plugin.php $
- * $LastChangedDate: 2015-06-10 15:52:44 +0000 (Wed, 10 Jun 2015) $
- * $LastChangedRevision: 1178330 $
- * $LastChangedBy: iworks $
  *
  */
 
@@ -55,7 +51,7 @@ function wpcf_embedded_deactivate_notice()
 ?>
     <div class="error">
         <p>
-            <?php _e( 'WP Types Embedded was <strong>deactivated</strong>! You are already running the complete WP Types plugin, so this one is not needed anymore.', 'wpcf' ); ?>
+            <?php _e( 'Types Embedded was <strong>deactivated</strong>! You are already running the complete Types plugin, so this one is not needed anymore.', 'wpcf' ); ?>
         </p>
     </div>
 <?php

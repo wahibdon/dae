@@ -9,10 +9,6 @@
  * @since Types 1.1.5
  * @autor srdjan
  *
- * $HeadURL: http://plugins.svn.wordpress.org/types/tags/1.6.6.6/embedded/resources/js/fields-form.js $
- * $LastChangedDate: 2015-04-10 07:43:49 +0000 (Fri, 10 Apr 2015) $
- * $LastChangedRevision: 1131821 $
- * $LastChangedBy: iworks $
  *
  */
 

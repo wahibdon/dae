@@ -1,10 +1,6 @@
 <?php
 /**
  *
- * $HeadURL: http://plugins.svn.wordpress.org/types/tags/1.6.6.6/embedded/includes/fields/skype.php $
- * $LastChangedDate: 2015-04-10 07:43:49 +0000 (Fri, 10 Apr 2015) $
- * $LastChangedRevision: 1131821 $
- * $LastChangedBy: iworks $
  *
  */
 
@@ -129,8 +125,8 @@ function wpcf_fields_skype_editor_callback( $field, $settings, $meta_type, $post
         'supports' => array('styling'),
         'tabs' => array(
             'display' => array(
-                'title' => __( 'Display', 'wpcf' ),
-                'menu_title' => __( 'Display', 'wpcf' ),
+                'title' => __( 'Display options for this field:', 'wpcf' ),
+                'menu_title' => __( 'Display options', 'wpcf' ),
                 'content' => WPCF_Loader::template( 'skype-select-button',
                         $settings ),
             ),

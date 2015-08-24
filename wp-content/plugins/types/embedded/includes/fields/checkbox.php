@@ -1,10 +1,6 @@
 <?php
 /**
  *
- * $HeadURL: http://plugins.svn.wordpress.org/types/tags/1.6.6.6/embedded/includes/fields/checkbox.php $
- * $LastChangedDate: 2015-04-10 07:43:49 +0000 (Fri, 10 Apr 2015) $
- * $LastChangedRevision: 1131821 $
- * $LastChangedBy: iworks $
  *
  */
 
@@ -92,8 +88,8 @@ function wpcf_fields_checkbox_editor_callback($field, $settings)
         'supports' => array('style'),
         'tabs' => array(
             'display' => array(
-                'menu_title' => __( 'Display', 'wpcf' ),
-                'title' => __( 'Display', 'wpcf' ),
+                'menu_title' => __( 'Display options', 'wpcf' ),
+                'title' => __( 'Display options for this field:', 'wpcf' ),
                 'content' => WPCF_Loader::template( 'editor-modal-checkbox',
                         $data ),
             )
