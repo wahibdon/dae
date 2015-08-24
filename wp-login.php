@@ -66,6 +66,11 @@ function login_header( $title = 'Log In', $message = '', $wp_error = '' ) {
 	<head>
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<title><?php bloginfo('name'); ?> &rsaquo; <?php echo $title; ?></title>
+	<style>
+	#login > h1 > a {
+		background-image: url('/wp-content/themes/html5blank-stable/images/dae-logo-big.gif')
+	}
+	</style>
 	<?php
 
 	wp_admin_css( 'login', true );
@@ -98,8 +103,8 @@ function login_header( $title = 'Log In', $message = '', $wp_error = '' ) {
 		$login_header_url   = network_home_url();
 		$login_header_title = get_current_site()->site_name;
 	} else {
-		$login_header_url   = __( 'https://wordpress.org/' );
-		$login_header_title = __( 'Powered by WordPress' );
+		$login_header_url   = __( 'http://www.daeind.com/' );
+		$login_header_title = __( 'DAE Industries' );
 	}
 
 	/**
