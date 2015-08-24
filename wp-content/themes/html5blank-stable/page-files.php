@@ -1,6 +1,5 @@
 <?php
-	if ( is_user_logged_in() ) { 
-		echo "logged in";
+	if ( is_user_logged_in() ) {
 		if(isset($_GET['file'])){
 			$file = __DIR__."/../../uploads/".$_GET['file'];
 			if (file_exists($file)) {
@@ -14,8 +13,6 @@
 			    readfile($file);
 			    exit;
 			}
-		}else{
-			print_r($_REQUEST);
 		}
 	}else{
 		header("Location: /wp-login.php");
