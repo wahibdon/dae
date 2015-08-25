@@ -1,0 +1,1 @@
+document.getElementById('menu-item-36').classList.add('current-menu-item');

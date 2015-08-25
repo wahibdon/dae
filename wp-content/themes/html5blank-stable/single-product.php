@@ -1,16 +1,14 @@
 <?php get_header(); 
 $term_slug = wp_get_post_terms($post->ID, 'prodcat');
-$terms = get_terms( 'prodcat');
 $manual = explode('/',types_render_field('manual'));
 $manual = $manual[count($manual)-1];
-	echo '  <ul class="subnav">';
-	foreach ($terms as $tax_term) {
-	    echo "      <li";
-	    if ($term_slug[0]->slug == $tax_term->slug)
-	        echo " class=\"active\"";
-	    echo "><a href=\"/index.php/prodcat/".$tax_term->slug."\">".$tax_term->name."</a></li>";
-	}
-	echo "  </ul>";
+wp_nav_menu(array(
+    'menu' => 'subnav-products',
+    'theme_location' => '__no_such_location',
+    'menu_class' => 'subnav',
+    'fallback_cb' => false,
+    'items_wrap' => '<ul class="%2$s">%3$s</ul>'
+)); 
 ?>	
 	<ul id="bread-crumbs">
 		<li><a href="/index.php/products/">All Products ></a></li>
