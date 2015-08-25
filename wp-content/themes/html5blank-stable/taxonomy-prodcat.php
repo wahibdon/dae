@@ -38,5 +38,5 @@ echo "  </ul>";
     <?php endwhile; ?>
     </ul>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/filter.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/product-indicator.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/products-indicator.js"></script>
 <?php get_footer(); ?>
