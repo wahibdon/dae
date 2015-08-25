@@ -30,5 +30,14 @@
 </html>*/
 ?>
 </div>
+<footer>
+<? wp_nav_menu(array(
+	'menu' => 'Footer',
+	'theme_location' => '__no_such_location',
+	'fallback_cb' => false,
+	'items_wrap' => '<ul>%3$s</ul>'
+)); ?>
+<span>&copy; 2015 DAE Industries</span>
+</footer>
 </body>
 </html>
