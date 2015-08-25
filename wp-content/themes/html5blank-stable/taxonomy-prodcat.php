@@ -38,4 +38,7 @@ echo "  </ul>";
     <?php endwhile; ?>
     </ul>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/filter.js"></script>
+    <script type="text/javascript">
+        document.getElementById('menu-item-66').classList.add('current-menu-item');
+    </script>
 <?php get_footer(); ?>
