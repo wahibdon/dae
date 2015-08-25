@@ -65,4 +65,6 @@
 
 	</section>
 
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/support-indicator.js"></script>
+
 <?php get_footer(); ?>

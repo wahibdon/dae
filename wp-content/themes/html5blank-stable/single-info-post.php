@@ -27,4 +27,5 @@ wp_nav_menu(array(
 		?>
 	</section>
 
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/info-indicator.js"></script>
 <?php get_footer(); ?>
