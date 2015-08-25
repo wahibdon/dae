@@ -112,7 +112,7 @@ ul.subnav li:hover, ul.subnav li.current-menu-item {
 	background-color: #e6e6e6;
 	font-weight: 100;
 }
-ul.subnav li:hover a, ul.subnav li.active a {
+ul.subnav li:hover a, ul.subnav li.current-menu-item a {
 	color: #000;
 }
 ul.subnav li a{

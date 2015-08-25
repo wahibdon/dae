@@ -64,6 +64,6 @@ wp_nav_menu(array(
 	<?php endif; ?>
 
 	</section>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/products-indicator.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/services-indicator.js"></script>
 
 <?php get_footer(); ?>
