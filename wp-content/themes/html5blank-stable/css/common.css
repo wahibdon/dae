@@ -623,3 +623,9 @@ li.blog-landing img {
   height: 150px;
   margin-right: 20px;
 }
+nav#index-nav{
+	height: 75;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	box-sizing: border-box;
+}
