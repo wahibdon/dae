@@ -1,4 +1,4 @@
-'<?php get_header(); ?>
+<?php get_header(); ?>
 <? wp_nav_menu(array(
 	'menu' => 'info-menu',
 	'theme_location' => '__no_such_location',
