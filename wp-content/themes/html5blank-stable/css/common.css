@@ -5,6 +5,7 @@
 }
 body {
 	background-color: #dfe1ec;
+	background-image: url('../images/daebg.png');
 	height: 500px;
 }
 #container {
