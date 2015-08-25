@@ -65,4 +65,5 @@ $manual = $manual[count($manual)-1];
 		<span class='st_googleplus_large' displayText='Google +'></span>
 	</div>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/product-functions.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/product-indicator.js"></script>
 <?php get_footer(); ?>
