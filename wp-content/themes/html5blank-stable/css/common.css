@@ -105,7 +105,7 @@ ul.subnav li{
 ul.subnav li:after{
 	content: url("../images/menu-down-arrow.gif");
 }
-ul.subnav li:hover:after, ul.subnav li.active:after {
+ul.subnav li:hover:after, ul.subnav li.current-menu-item:after {
 	content: url("../images/menu-down-arrow-active.gif");
 }
 ul.subnav li:hover, ul.subnav li.current-menu-item {
