@@ -6,7 +6,7 @@
 	'fallback_cb' => false,
 	'items_wrap' => '<ul class="%2$s">%3$s</ul>'
 )); 
-	
+	$terms = get_terms( 'prodcat');
 	echo "<ul id=\"internal-landing\">";
 	foreach ($terms as $term){
 		?>
