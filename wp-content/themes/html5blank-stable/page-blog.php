@@ -6,7 +6,7 @@
 	'fallback_cb' => false,
 	'items_wrap' => '<ul class="%2$s">%3$s</ul>'
 )); 
-	$blog = new WP_Query(array('post_type'=>'blog-post', 'orderby'=>'modified', 'posts_per_page'=>5));
+	$blog = new WP_Query(array('post_type'=>'blog-post', 'orderby'=>'modified', 'posts_per_page'=>5, ''));
 
 	if( $blog->have_posts() ){
 		echo "<ul id=\"internal-landing\">";
@@ -24,8 +24,7 @@
 		?>
 		</ul>
 
-	<div class="nav-previous alignleft"><?php $blog->next_posts_link( 'Older posts' ); ?></div>
-	<div class="nav-next alignright"><?php $blog->previous_posts_link( 'Newer posts' ); ?></div>
+	<?php echo $blog->paginate_links(); ?>
 
 	<?}?>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/info-indicator.js"></script>
