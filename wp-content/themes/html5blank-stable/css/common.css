@@ -559,7 +559,7 @@ ul#product-list li.single-product, ul#internal-landing li.internal-landing {
 	display: inline-block;
 	width: 305px;
 	overflow: hidden;
-	height: 275px;
+	height: 305px;
 	margin-left: 20px;
 	border: 1px solid #ccc;
 	box-shadow: 0 3px 3px 0px #bbb;
@@ -590,12 +590,13 @@ ul#product-list li.single-product a > div > img, ul#internal-landing li.internal
 }
 ul#product-list li.single-product a h2, ul#internal-landing li.internal-landing a h2 {
 	text-transform: uppercase;
-	color: #ccc;
+	color: #999;
 	font-size: 10px;
 	font-weight: 500;
+	margin: 5px 0;
 }
 ul#product-list li.single-product a p, ul#internal-landing li.internal-landing a p {
-	font-size: 11px;
+	font-size: 13px;
 	font-weight: 100;
 	color: #000;
 }
