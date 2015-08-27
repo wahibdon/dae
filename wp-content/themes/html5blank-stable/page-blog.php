@@ -24,8 +24,8 @@
 		?>
 		</ul>
 
-	<div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
-	<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
+	<div class="nav-previous alignleft"><?php $blog->next_posts_link( 'Older posts' ); ?></div>
+	<div class="nav-next alignright"><?php $blog->previous_posts_link( 'Newer posts' ); ?></div>
 
 	<?}?>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/info-indicator.js"></script>
