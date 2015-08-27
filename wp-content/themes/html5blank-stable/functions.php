@@ -485,12 +485,11 @@ function build_rec_table($table_array){
     $table = "<table>
             <thead>
                 <tr>
-                    <th colspan=\"2\">{$table_array['header'][0][c]}</th>
+                    <th>{$table_array['header'][0][c]}</th>
                 </tr>
             </thead>";
     $table .= "<tbody>";
     for($i = 0; $i < count($table_array['body']); $i++){
-        if($table_array['body'][$i][0][c] != "")
             $table.="<tr><td>{$table_array['body'][$i][0][c]}</td></tr>";
     }
     $table .="</tbody></table>";
