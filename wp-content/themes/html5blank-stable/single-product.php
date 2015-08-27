@@ -37,8 +37,8 @@ wp_nav_menu(array(
 				<?php echo types_render_field("product-image", array('output' => 'html')); ?>
 			</div>
 		</div>
-		<? echo build_spec_table(get_field('recommendations')); ?>
-		<? echo build_spec_table(get_field('options')); ?>
+		<? echo build_rec_table(get_field('recommendations')); ?>
+		<? echo build_options_table(get_field('options')); ?>
 	</section>
 	<div id="share-box" style="display: none;
     position: absolute;
