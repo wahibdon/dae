@@ -479,17 +479,19 @@ footer span{
 }
 #css-index-more-info-links li a {
 	display: inline-block;
-	border: 3px solid #27387e;
+	border: 2px solid #27387e;
 	width: 190px;
 	height: 40px;
 	color: #27387e;
 	text-decoration: none;
-	line-height: 40px; 
+	line-height: 40px;
+	background-color: #fff;
+	font-weight: 400;
 }
 #css-index-more-info-links li:last-child a {
 	border: 0;
 	height: auto;
-
+	background-color: transparent;
 }
 #css-index-featured-product, #css-index-news {
 	background-color: #fff;
@@ -499,6 +501,7 @@ footer span{
 	font-size: 11px;
 	overflow: auto;
 	display: none;
+	border: 2px solid #27387e;
 }
 #feature-toggle, #news-toggle{
 	cursor: pointer;
