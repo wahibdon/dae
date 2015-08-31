@@ -27,4 +27,5 @@ document.getElementById('news-toggle').addEventListener('click', function(){
 });
 document.getElementById('logo').src="/wp-content/themes/html5blank-stable/images/dae-logo-big.gif";
 document.getElementsByTagName('nav')[0].id = "index-nav";
+window.slider = 0;
 window.addEventListener('load', cycle);

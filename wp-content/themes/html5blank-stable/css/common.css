@@ -421,7 +421,7 @@ footer span{
 	width: 600px;
 	padding: 0 25px;
 	text-align: right;
-	visibility: hidden
+	visibility: hidden;
 	transition: 1s all;
 }
 #css-index-spotlight section >a {
@@ -429,7 +429,7 @@ footer span{
 	color: #fff;
 }
 #css-index-spotlight section:first-of-type {
-	display: block;
+	visibility: visible;
 }
 #css-index-spotlight section h1{
 	font-size: 16px;
