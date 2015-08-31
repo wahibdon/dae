@@ -62,7 +62,7 @@ while ($news->have_posts()){
 
 
 	<div id="css-index-spotlight">
-		<img class="left-arrow" src="<?php echo get_template_directory_uri(); ?>/images/home-left-arrow.gif" /><img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/images/home-right-arrow.gif" />
+		<!--<img class="left-arrow" src="<?php echo get_template_directory_uri(); ?>/images/home-left-arrow.gif" /><img class="right-arrow" src="<?php echo get_template_directory_uri(); ?>/images/home-right-arrow.gif" />-->
 		<?=$fs;?>
 	</div>
 	<div id="css-index-more-info">

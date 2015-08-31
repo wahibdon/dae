@@ -6,7 +6,8 @@
 body {
 	background-color: #dfe1ec;
 	background-image: url('../images/daebg.png');
-	height: 500px;
+	min-height: 500px;
+	background-attachment: fixed;
 }
 #container {
 	width: 1000px;
@@ -420,7 +421,8 @@ footer span{
 	width: 600px;
 	padding: 0 25px;
 	text-align: right;
-	display: none;
+	visibility: hidden
+	transition: 1s all;
 }
 #css-index-spotlight section >a {
 	text-decoration: none;
@@ -455,6 +457,7 @@ footer span{
 	position: absolute;
 	bottom: 40px;
 	cursor: pointer;
+	z-index: 100;
 }
 #css-index-spotlight img.left-arrow{ left: 300px; }
 #css-index-spotlight img.right-arrow{ right: 20px; }

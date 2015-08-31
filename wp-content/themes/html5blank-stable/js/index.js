@@ -1,3 +1,14 @@
+function cycle(){
+	var list = document.getElementById('css-index-spotlight').getElementsByTagName('section');
+	list[window.slider].style.visibility = 'hidden';
+	list[window.slider].style.opacity = "0";
+	if (window.slider+1 >= list.length)
+		window.slider = -1;
+	window.slider++;
+	list[window.slider].style.visibility = 'visible';
+	list[window.slider].style.opacity = "1";
+}
+
 var feature = document.getElementById('css-index-featured-product');
 var news = document.getElementById('css-index-news');
 document.getElementById('feature-toggle').addEventListener('click', function(){
@@ -16,3 +27,4 @@ document.getElementById('news-toggle').addEventListener('click', function(){
 });
 document.getElementById('logo').src="/wp-content/themes/html5blank-stable/images/dae-logo-big.gif";
 document.getElementsByTagName('nav')[0].id = "index-nav";
+window.addEventListener('load', cycle);
