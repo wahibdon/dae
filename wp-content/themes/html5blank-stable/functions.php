@@ -511,6 +511,21 @@ function add_login_out_item_to_menu( $items, $args ){
 }add_filter( 'wp_nav_menu_items', 'add_login_out_item_to_menu', 50, 2 );
 function show_contact(){
     $contact = new WP_Query(array('post_type'=>'contact','limit'=>1));
+    if($contact->have_posts()){
+        while ($blog->have_posts()){
+            $blog->the_post();
+            $output = <<<EOF
+            <img src="{get_template_directory_uri()}/images/phone.gif" />
+            <a href="tel:+1">5025855951</a>
+            <img src="{get_template_directory_uri()}/images/email.gif" />
+            <a href="mailto:email@example.com">mail@dae.com</a>
+            <img src="{get_template_directory_uri()}/images/location.gif" />
+            <address>
+                501 South 15th Street<br />
+                Louisville, KY 40203
+            </address>
+EOF;
+    }
     print_r($contact);
 }
 ?>
