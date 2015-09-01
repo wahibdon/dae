@@ -515,7 +515,7 @@ function show_contact(){
     if($contact->have_posts()){
         while ($contact->have_posts()){
             $contact->the_post();
-            $phone = types_render_field('contact-phone', array('output' => 'html'));
+            $phone = types_render_field('contact-phone', array('output' => 'normal'));
             $output = <<<EOF
             <img src="$url_stub/images/phone.gif" />
             <a href="tel:+1">$phone</a>
