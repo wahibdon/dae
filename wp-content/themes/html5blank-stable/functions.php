@@ -516,9 +516,10 @@ function show_contact(){
         while ($contact->have_posts()){
             $contact->the_post();
             $phone = types_render_field('contact-phone', array('output' => 'normal'));
+            $phone_url = preg_replace('/^\(?([0-9]{3})\)?(.*)?([0-9]{3})(.*)?([0-9]{4})$/', '$1$3$5', $phone);
             $output = <<<EOF
             <img src="$url_stub/images/phone.gif" />
-            <a href="tel:+1">$phone</a>
+            <a href="tel:+1$phone_url">$phone</a>
             <img src="$url_stub/images/email.gif" />
             <a href="mailto:email@example.com">mail@dae.com</a>
             <img src="$url_stub/images/location.gif" />
