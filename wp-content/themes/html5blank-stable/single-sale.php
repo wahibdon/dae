@@ -2,7 +2,7 @@
 
 	<ul class="subnav"></ul>
 	<section>
-
+	<?php show_contact();?>
 	<section id="blog">
 		<aside>
 			<img src="<?php echo get_template_directory_uri(); ?>/images/phone.gif" />
