@@ -525,7 +525,7 @@ function show_contact(){
                 Louisville, KY 40203
             </address>
 EOF;
+        }
     }
-    print_r($contact);
+    echo $output;
 }
-?>
