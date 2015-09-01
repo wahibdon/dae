@@ -2,18 +2,9 @@
 
 	<ul class="subnav"></ul>
 	<section>
-	<?php show_contact();?>
 	<section id="blog">
 		<aside>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/phone.gif" />
-			<a href="tel:+1">5025855951</a>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/email.gif" />
-			<a href="mailto:email@example.com">mail@dae.com</a>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/location.gif" />
-			<address>
-				501 South 15th Street<br />
-				Louisville, KY 40203
-			</address>
+			<?php show_contact();?>
 		</aside>
 		<img src="<?=types_render_field('left-image', array('output' => 'raw')); ?>" />
 
