@@ -515,9 +515,10 @@ function show_contact(){
     if($contact->have_posts()){
         while ($contact->have_posts()){
             $contact->the_post();
+            $phone = types_render_field('contact-phone', array('output' => 'raw'));
             $output = <<<EOF
             <img src="$url_stub/images/phone.gif" />
-            <a href="tel:+1">5025855951</a>
+            <a href="tel:+1">$phone</a>
             <img src="$url_stub/images/email.gif" />
             <a href="mailto:email@example.com">mail@dae.com</a>
             <img src="$url_stub/images/location.gif" />
