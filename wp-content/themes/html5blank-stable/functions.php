@@ -519,12 +519,13 @@ function show_contact(){
             $phone_url = preg_replace('/^\(?([0-9]{3})\)?(.*)?([0-9]{3})(.*)?([0-9]{4})$/', '$1$3$5', $phone);
             $email = types_render_field('contact-email');
             $address = types_render_field('contact-address');
-            $address_url = types_render_field('contact-address-link');
+            $address = preg_replace('/^\<p\>(.*)\<\/p\>$/', '$1', $address);
+            $address_url = types_render_field('contact-address-link', array('output' => 'raw'));
             $output = <<<EOF
             <img src="$url_stub/images/phone.gif" />
             <a href="tel:+1$phone_url">$phone</a>
             <img src="$url_stub/images/email.gif" />
-            <a href="mailto:$email">$email</a>
+            $email
             <img src="$url_stub/images/location.gif" />
             <a href="$address_url">
                 <address>
