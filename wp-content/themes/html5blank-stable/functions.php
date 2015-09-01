@@ -512,8 +512,8 @@ function add_login_out_item_to_menu( $items, $args ){
 function show_contact(){
     $contact = new WP_Query(array('post_type'=>'contact','limit'=>1));
     if($contact->have_posts()){
-        while ($blog->have_posts()){
-            $blog->the_post();
+        while ($contact->have_posts()){
+            $contact->the_post();
             $output = <<<EOF
             <img src="{get_template_directory_uri()}/images/phone.gif" />
             <a href="tel:+1">5025855951</a>
