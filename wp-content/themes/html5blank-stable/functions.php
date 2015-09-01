@@ -510,7 +510,7 @@ function add_login_out_item_to_menu( $items, $args ){
     return $items.= '<li id="log-in-out-link" class="menu-item menu-type-link">'. $link . '</li>';
 }add_filter( 'wp_nav_menu_items', 'add_login_out_item_to_menu', 50, 2 );
 function show_contact(){
-    $contact = wp_query('contacts', array('limit'=>1));
+    $contact = new WP_Query(array('post_type'=>'contact','limit'=>1));
     print_r($contact);
 }
 ?>
