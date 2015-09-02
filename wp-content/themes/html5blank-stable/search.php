@@ -2,6 +2,9 @@
 
 		<section id="blog">
 
+
+			<img src="<?=types_render_field('info-image', array('output' => 'raw')); ?>" />
+
 			<article>
 				<h2><?php echo sprintf( __( '%s Search Results for ', 'html5blank' ), $wp_query->found_posts ); echo "\"".get_search_query()."\""; ?></h2>
 
