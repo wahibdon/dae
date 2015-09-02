@@ -331,6 +331,9 @@ section#search-page {
 section#search-page > article{
 	padding-left: 350px;
 }
+section#search-page > article > article {
+	margin: 10px 0;
+}
 section#blog > img, section#search-page > img {
 	float: left;
 }
