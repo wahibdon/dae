@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-		<section id="blog">
+		<section id="search-page">
 
 
 			<img src="<?=types_render_field('left-image', array('output' => 'raw')); ?>" />

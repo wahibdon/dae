@@ -537,3 +537,19 @@ EOF;
     }
     echo $output;
 }
+function search_image_register( $wp_customize ) {
+    $wp_customize->add_setting('search-image');
+    $wp_customize->add_section('search-section', array(
+        'title' => 'Search'
+    ));
+    $wp_customize->add_control(new WP_Customize_Image_Control(
+        $wp_customize,
+        'search-image-control',
+        array(
+            'label' => 'Search Page Image',
+            'section' => 'search-section',
+            'setting' => 'search-image'
+        )
+    ))
+}
+add_action( 'customize_register', 'search_image_register' );

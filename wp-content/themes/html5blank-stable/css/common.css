@@ -323,6 +323,12 @@ aside a, aside address {
 	margin-bottom: 25px;
 	font-style: normal;
 }
+section#search-page {
+	padding-left: 350px;
+	padding-top: 15px;
+	font-size: 11px;
+	
+}
 section#blog > img {
 	float: left;
 }
