@@ -326,7 +326,7 @@ aside a, aside address {
 section#blog > img {
 	float: left;
 }
-section#blog article{
+section#blog > article{
 	padding-left: 350px;
 	padding-top: 15px;
 	font-size: 11px;
