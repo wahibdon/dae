@@ -550,6 +550,6 @@ function search_image_register( $wp_customize ) {
             'section' => 'search-section',
             'setting' => 'search-image'
         )
-    ))
+    ));
 }
 add_action( 'customize_register', 'search_image_register' );
