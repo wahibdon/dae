@@ -328,7 +328,7 @@ section#search-page {
 	font-size: 11px;
 
 }
-section#search-page article{
+section#search-page > article{
 	padding-left: 350px;
 }
 section#blog > img, section#search-page > img {
