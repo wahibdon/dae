@@ -538,7 +538,7 @@ EOF;
     echo $output;
 }
 function search_image_register( $wp_customize ) {
-    $wp_customize->add_setting('search-image');
+    $wp_customize->add_setting('search-image', array('type' => 'option'));
     $wp_customize->add_section('search-section', array(
         'title' => 'Search'
     ));
