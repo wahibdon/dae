@@ -548,7 +548,7 @@ function search_image_register( $wp_customize ) {
         array(
             'label' => 'Search Page Image',
             'section' => 'search-section',
-            'setting' => 'search-image'
+            'settings' => 'search-image'
         )
     ));
 }
