@@ -327,9 +327,9 @@ section#search-page {
 	padding-left: 350px;
 	padding-top: 15px;
 	font-size: 11px;
-	
+
 }
-section#blog > img {
+section#blog > img, section#search-page > img {
 	float: left;
 }
 section#blog > article{
