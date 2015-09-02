@@ -538,10 +538,7 @@ EOF;
     echo $output;
 }
 function search_image_register( $wp_customize ) {
-    $wp_customize->add_setting( 'search-image', array(                                             
-        'type'           => 'theme_mod',
-        'capability'     => 'edit_theme_options'                                            )
-    );
+    $wp_customize->add_setting( 'search-image');
     $wp_customize->add_section('search-section', array(
         'title' => 'Search'
     ));
