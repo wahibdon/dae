@@ -18,14 +18,15 @@
             	<img src="<?=types_render_field("blog-image", array('output' => 'raw')); ?>" />
                 <h2><?=$post->post_title; ?></h2>
         		<p> <?=substr($post->post_content, 0, 500)."...";?></p>
-                <p><a href="<?="/index.php/blog-posts/".$post->post_name."/" ?>">Read more &raquo;</a></p>
+                <p><a href="<? the_permalink(); ?>">Read more &raquo;</a></p>
 	        </li>
 			<?
 		}
 		?>
 		</ul>
 
-	<?php echo paginate_links(); ?>
+	<?php previous_posts_link( '« Newer Entries' ); ?>
+	<?php next_posts_link( 'Older Entries »', 0 ); ?>
 
 	<?}?>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/info-indicator.js"></script>
