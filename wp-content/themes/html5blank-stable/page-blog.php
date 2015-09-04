@@ -25,7 +25,8 @@
 		?>
 		</ul>
 
-	<?php get_template_part('pagination'); ?>
+	<?php previous_post_link( '« Newer Entries' ); ?>
+	<?php next_post_link( 'Older Entries »', 0 ); ?>
 
 	<?}?>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/info-indicator.js"></script>
