@@ -42,6 +42,4 @@ $blog = new WP_Query( array('post_type'=>'blog-post', 'orderby'=>'modified', 'po
         <?php endif; ?>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/info-indicator.js"></script>
 
-    <? print_r($blog);?>
-
 <?php get_footer(); ?>
