@@ -6,7 +6,7 @@
 	'fallback_cb' => false,
 	'items_wrap' => '<ul class="%2$s">%3$s</ul>'
 )); 
-	$blog = new WP_Query(array('post_type'=>'blog-post', 'orderby'=>'modified', 'posts_per_page'=>5, ''));
+	$blog = new WP_Query(array('post_type'=>'blog-post', 'orderby'=>'modified', 'posts_per_page'=>5, 'paged' => $paged,''));
 
 	if( $blog->have_posts() ){
 		echo "<ul id=\"internal-landing\">";
