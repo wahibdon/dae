@@ -10,7 +10,7 @@
 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
  
 // the query
-$blog = new WP_Query( 'cat=1&paged=' . $paged );
+$blog = new WP_Query( array('post_type'=>'blog-post', 'orderby'=>'modified', 'posts_per_page'=>2, 'paged' => $paged) );
 ?>
  
 <?php if ( $blog->have_posts() ) : ?>
