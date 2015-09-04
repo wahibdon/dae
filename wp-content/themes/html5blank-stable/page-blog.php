@@ -21,7 +21,7 @@ $blog = new WP_Query( 'cat=1&paged=' . $paged );
         ?>
                 <li class="blog-landing">
                 <h2><?php the_title(); ?></h2>
-                <p><?php the_content(); ?</p>
+                <p><?php the_content(); ?></p>
                 </li>
         <?php endwhile; ?>
         </ul>
