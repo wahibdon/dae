@@ -26,7 +26,7 @@
 		</ul>
 
 	<?php previous_posts_link( '« Newer Entries' ); ?>
-	<?php next_posts_link( 'Older Entries »', 0 ); ?>
+	<?php next_posts_link( 'Older Entries »', 1); ?>
 
 	<?}?>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/info-indicator.js"></script>
