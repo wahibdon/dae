@@ -24,7 +24,7 @@
 		?>
 		</ul>
 
-	<?php echo $blog->paginate_links(); ?>
+	<?php get_template_part('pagination'); ?>
 
 	<?}?>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/info-indicator.js"></script>
