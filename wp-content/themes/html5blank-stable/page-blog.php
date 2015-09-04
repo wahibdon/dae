@@ -25,7 +25,7 @@
 		?>
 		</ul>
 
-	<?php previous_posts_link( '« Newer Entries' ); ?>
+	<?php $blog->previous_posts_link( '« Newer Entries' ); ?>
 	<?php next_posts_link( 'Older Entries »', 0 ); ?>
 
 	<?}?>
