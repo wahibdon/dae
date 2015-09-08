@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<? wp_nav_menu(array(
+<?php wp_nav_menu(array(
 	'menu' => 'info-menu',
 	'theme_location' => '__no_such_location',
 	'menu_class' => 'subnav',
@@ -17,7 +17,7 @@ if ( $blog->have_posts() ) : ?>
         <?php
         // the loop
         while ( $blog->have_posts() ) : $blog->the_post();
-	        if(types_render_field('blog-sticky', array('output' => 'raw'))) :
+	        //if(types_render_field('blog-sticky', array('output' => 'raw'))) :
 	        ?>
                 <li class="blog-landing">
             	<img src="<?php echo types_render_field("blog-image", array('output' => 'raw')); ?>" />
@@ -25,7 +25,7 @@ if ( $blog->have_posts() ) : ?>
                 <p><?php echo substr($post->post_content, 0, 500)."...";?></p>
                 <p><a href="<? the_permalink(); ?>">Read more &raquo;</a></p>
                 </li>
-	        <?php endif;
+	        <?php //endif;
         endwhile; ?>
         </ul>
 <?php
