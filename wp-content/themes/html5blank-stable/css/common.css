@@ -647,3 +647,6 @@ nav#index-nav{
 	padding-bottom: 11px;
 	box-sizing: border-box;
 }
+div#paging-links {
+	text-align: center;
+}

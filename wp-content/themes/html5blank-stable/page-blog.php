@@ -27,13 +27,14 @@ $blog = new WP_Query( array('post_type'=>'blog-post', 'orderby'=>'modified', 'po
                 </li>
         <?php endwhile; ?>
         </ul>
+        <div id="paging-links">
         <?php
  
         // get_next_posts_link() usage with max_num_pages
-        echo get_next_posts_link( 'Older Entries', $blog->max_num_pages );
         echo get_previous_posts_link( 'Newer Entries' );
+        echo get_next_posts_link( 'Older Entries', $blog->max_num_pages );
         ?>
- 
+        </div>
         <?php
         // clean up after our query
         wp_reset_postdata();
