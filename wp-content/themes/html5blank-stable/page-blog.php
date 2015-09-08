@@ -10,7 +10,7 @@
 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
  
 //stickies
-$stickies = new WP_Query( array('post_type'=>'blog-post', 'orderby'=>'modified');
+$stickies = new WP_Query( array('post_type'=>'blog-post', 'orderby'=>'modified'));
 
 if ( $blog->have_posts() ) : ?>
         <ul id="sticky-landing">
