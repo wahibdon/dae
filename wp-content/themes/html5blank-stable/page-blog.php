@@ -9,12 +9,32 @@
 // set the "paged" parameter (use 'page' if the query is on a static front page)
 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
  
+//stickies
+$stickies = new WP_Query( array('post_type'=>'blog-post', 'orderby'=>'modified');
+
+if ( $blog->have_posts() ) : ?>
+        <ul id="sticky-landing">
+        <?php
+        // the loop
+        while ( $blog->have_posts() ) : $blog->the_post();
+        if(types_render_field('blog-sticky', array('output' => 'raw'))){
+        ?>
+                <li class="blog-landing">
+            	<img src="<?php echo types_render_field("blog-image", array('output' => 'raw')); ?>" />
+                <h2><?php the_title(); ?></h2>
+                <p><?php echo substr($post->post_content, 0, 500)."...";?></p>
+                <p><a href="<? the_permalink(); ?>">Read more &raquo;</a></p>
+                </li>
+        <?php }
+        endwhile; ?>
+        </ul>
+<?php
 // the query
 $blog = new WP_Query( array('post_type'=>'blog-post', 'orderby'=>'modified', 'posts_per_page'=>5, 'paged' => $paged) );
 ?>
  
 <?php if ( $blog->have_posts() ) : ?>
-        <ul id=\"internal-landing\">
+        <ul id="internal-landing">
         <?php
         // the loop
         while ( $blog->have_posts() ) : $blog->the_post();
