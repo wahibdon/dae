@@ -632,8 +632,7 @@ section#search-results h2 {
 li.blog-landing {
 	overflow: auto;
 	list-style-type: none;
-	margin: 20px;
-	margin-bottom: 20px;
+	padding: 10px;
 }
 li.blog-landing img {
   width: 275px;
@@ -649,4 +648,7 @@ nav#index-nav{
 }
 div#paging-links {
 	text-align: center;
+}
+#sticky-landing {
+	background-color: lightyellow;
 }
