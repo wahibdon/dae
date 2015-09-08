@@ -12,12 +12,12 @@ $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 //stickies
 $stickies = new WP_Query( array('post_type'=>'blog-post', 'orderby'=>'modified'));
 
-if ( $blog->have_posts() ) : ?>
+if ( $stickies->have_posts() ) : ?>
         <ul id="sticky-landing">
         <?php
         // the loop
-        while ( $blog->have_posts() ) : $blog->the_post();
-	        //if(types_render_field('blog-sticky', array('output' => 'raw'))) :
+        while ( $stickies->have_posts() ) : $stickies->the_post();
+	        if(types_render_field('blog-sticky', array('output' => 'raw'))) :
 	        ?>
                 <li class="blog-landing">
             	<img src="<?php echo types_render_field("blog-image", array('output' => 'raw')); ?>" />
@@ -25,7 +25,7 @@ if ( $blog->have_posts() ) : ?>
                 <p><?php echo substr($post->post_content, 0, 500)."...";?></p>
                 <p><a href="<? the_permalink(); ?>">Read more &raquo;</a></p>
                 </li>
-	        <?php //endif;
+	        <?php endif;
         endwhile; ?>
         </ul>
 <?php
