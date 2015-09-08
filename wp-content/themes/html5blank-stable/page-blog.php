@@ -39,6 +39,7 @@ $blog = new WP_Query( array('post_type'=>'blog-post', 'orderby'=>'modified', 'po
         <?php
         // the loop
         while ( $blog->have_posts() ) : $blog->the_post();
+	        if(!types_render_field('blog-sticky', array('output' => 'raw'))) :
         ?>
                 <li class="blog-landing">
             	<img src="<?php echo types_render_field("blog-image", array('output' => 'raw')); ?>" />
@@ -46,7 +47,8 @@ $blog = new WP_Query( array('post_type'=>'blog-post', 'orderby'=>'modified', 'po
                 <p><?php echo substr($post->post_content, 0, 500)."...";?></p>
                 <p><a href="<? the_permalink(); ?>">Read more &raquo;</a></p>
                 </li>
-        <?php endwhile; ?>
+        <?php endif;
+        endwhile; ?>
         </ul>
         <div id="paging-links">
         <?php
