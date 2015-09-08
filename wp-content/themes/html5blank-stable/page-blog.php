@@ -17,15 +17,15 @@ if ( $blog->have_posts() ) : ?>
         <?php
         // the loop
         while ( $blog->have_posts() ) : $blog->the_post();
-        if(types_render_field('blog-sticky', array('output' => 'raw'))){
-        ?>
+	        if(types_render_field('blog-sticky', array('output' => 'raw'))) :
+	        ?>
                 <li class="blog-landing">
             	<img src="<?php echo types_render_field("blog-image", array('output' => 'raw')); ?>" />
                 <h2><?php the_title(); ?></h2>
                 <p><?php echo substr($post->post_content, 0, 500)."...";?></p>
                 <p><a href="<? the_permalink(); ?>">Read more &raquo;</a></p>
                 </li>
-        <?php }
+	        <?php endif;
         endwhile; ?>
         </ul>
 <?php
